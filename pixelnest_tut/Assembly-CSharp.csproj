@@ -53,6 +53,7 @@
      <Compile Include="Assets\scripts\RenderExtensions.cs" />
      <Compile Include="Assets\scripts\ScrollingScript.cs" />
      <Compile Include="Assets\scripts\ShotScript.cs" />
+     <Compile Include="Assets\scripts\SpecialEffectsHelper.cs" />
      <Compile Include="Assets\scripts\WeaponScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
