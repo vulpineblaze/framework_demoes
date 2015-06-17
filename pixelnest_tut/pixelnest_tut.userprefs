@@ -1,12 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\PlayerScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ScrollingScript.cs">
     <Files>
-      <File FileName="Assets\scripts\ShotScript.cs" Line="25" Column="2" />
-      <File FileName="Assets\scripts\PlayerScript.cs" Line="42" Column="3" />
+      <File FileName="Assets\scripts\ScrollingScript.cs" Line="40" Column="2" />
+      <File FileName="Assets\scripts\ShotScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\PlayerScript.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\MoveScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\HealthScript.cs" Line="49" Column="2" />
-      <File FileName="Assets\scripts\WeaponScript.cs" Line="55" Column="1" />
+      <File FileName="Assets\scripts\HealthScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\WeaponScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\EnemyScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
