@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\EnemyScript.cs" />
+     <Compile Include="Assets\scripts\GameOverScript.cs" />
      <Compile Include="Assets\scripts\HealthScript.cs" />
+     <Compile Include="Assets\scripts\MenuScript.cs" />
      <Compile Include="Assets\scripts\MoveScript.cs" />
      <Compile Include="Assets\scripts\PlayerScript.cs" />
      <Compile Include="Assets\scripts\RenderExtensions.cs" />
