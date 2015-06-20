@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\EnemyScript.cs">
+    <Files>
+      <File FileName="Assets\scripts\SoundEffectsHelper.cs" Line="53" Column="2" />
+      <File FileName="Assets\scripts\ShotScript.cs" Line="26" Column="1" />
+      <File FileName="Assets\scripts\HealthScript.cs" Line="52" Column="1" />
+      <File FileName="Assets\scripts\PlayerScript.cs" Line="74" Column="2" />
+      <File FileName="Assets\scripts\EnemyScript.cs" Line="84" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

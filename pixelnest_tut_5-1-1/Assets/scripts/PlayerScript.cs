@@ -36,7 +36,7 @@ public class PlayerScript : MonoBehaviour
 			{
 				// false because the player is not an enemy
 				weapon.Attack(false);
-			}
+				SoundEffectsHelper.Instance.MakePlayerShotSound();			}
 		}
 
 		// 6 - Make sure we are not outside the camera bounds
