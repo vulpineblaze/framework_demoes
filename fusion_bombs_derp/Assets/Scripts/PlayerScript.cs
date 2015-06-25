@@ -15,6 +15,22 @@ public class PlayerScript : MonoBehaviour
 
   void Update()
   {
+    // ...
+
+    // 5 - Shooting
+    bool shoot = Input.GetButtonDown("Fire1");
+    shoot |= Input.GetButtonDown("Fire2");
+    // Careful: For Mac users, ctrl + arrow is a bad idea
+
+    if (shoot)
+    {
+      WeaponScript weapon = GetComponent<WeaponScript>();
+      if (weapon != null)
+      {
+        // false because the player is not an enemy
+        weapon.Attack(false);
+      }
+    }
     // 3 - Retrieve axis information
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");
@@ -30,11 +46,13 @@ public class PlayerScript : MonoBehaviour
 	// newDir = new Vector3(0,0,newDir.z);	
 	// transform.rotation = Quaternion.LookRotation(newDir);
 	// Vector3 vectorToTarget = targetTransform.position - transform.position;
-
-	Vector3 vectorToTarget = new Vector3(inputX, + inputY,0);
-	float angle = Mathf.Atan2(-vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
-	Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-	transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 10f);
+    if(inputX != 0 || inputY != 0)
+    {
+    Vector3 vectorToTarget = new Vector3(inputX, + inputY,0);
+    float angle = Mathf.Atan2(-vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
+    Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+    transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 10f);
+    }
   }
 
   void FixedUpdate()
