@@ -59,9 +59,18 @@ public class MovetoMouseScript : MonoBehaviour {
       Vector3 z_vector = new Vector3(0.0f, 0.0f, (float)angle);
       transform.rotation = Quaternion.Euler( z_vector );
 
+      //removes extreme values of x,y and replaces with maxSpeed
+      float clean_x = speed.x * mouse_pos.x;
+      float clean_y = speed.y * mouse_pos.y;
+      
+      while( Mathf.Abs(clean_x) > Mathf.Abs(maxSpeed) || Mathf.Abs(clean_y) > Mathf.Abs(maxSpeed)){
+        clean_x *= 0.9f;
+        clean_y *= 0.9f;
+      }
+
       movement = new Vector2(
-        Mathf.Min(speed.x * mouse_pos.x, maxSpeed),
-        Mathf.Min(speed.y * mouse_pos.y, maxSpeed));
+        clean_x,
+        clean_y);
 
     }
 
