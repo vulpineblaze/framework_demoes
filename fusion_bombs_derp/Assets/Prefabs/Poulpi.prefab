@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &161286
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 416806}
+  - 114: {fileID: 11448572}
+  m_Layer: 0
+  m_Name: WeaponObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &169886
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,6 +29,7 @@ GameObject:
   - 50: {fileID: 5048614}
   - 114: {fileID: 11498260}
   - 114: {fileID: 11440036}
+  - 114: {fileID: 11458190}
   m_Layer: 0
   m_Name: Poulpi
   m_TagString: Untagged
@@ -20,6 +37,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &416806
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161286}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 456502}
+  m_RootOrder: 0
 --- !u!4 &456502
 Transform:
   m_ObjectHideFlags: 1
@@ -29,7 +58,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.270092, y: 3.31512785, z: 0}
   m_LocalScale: {x: .300000012, y: .300000012, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 416806}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!50 &5048614
@@ -74,6 +104,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1
   isEnemy: 1
+--- !u!114 &11448572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 161286}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37356ca7b809499459d886711a4fded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 412842, guid: 28ce2a3e91bc0c748abbc688b3298d9a, type: 2}
+  shootingRate: .75
+--- !u!114 &11458190
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4d00cb44aab1414f8f3cf50948e7670, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11498260
 MonoBehaviour:
   m_ObjectHideFlags: 1
