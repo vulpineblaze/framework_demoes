@@ -4,7 +4,10 @@ using System.Collections;
 public class CollideMenuScript : MonoBehaviour {
 
 	// Use this for initialization
-	private bool isCollided = false;
+	public Transform menu;
+	
+	private Transform menuTransform;
+
 	void Start () {
 	
 	}
@@ -21,7 +24,12 @@ public class CollideMenuScript : MonoBehaviour {
 		PlayerScript player = otherCollider.gameObject.GetComponent<PlayerScript>();
 		if(player)
 		{
-			isCollided = true;
+				// Create a new shot
+			menuTransform = Instantiate(menu) as Transform;
+
+			// Assign position
+			menuTransform.position = transform.position;
+			menuTransform.rotation = transform.rotation;
 		}
 	}
 
@@ -32,29 +40,10 @@ public class CollideMenuScript : MonoBehaviour {
 		PlayerScript player = otherCollider.gameObject.GetComponent<PlayerScript>();
 		if(player)
 		{
-			isCollided = false;
+			Destroy(menuTransform.gameObject);
 		}
 	}
 
-	void OnGUI(){
+	
 
-		//buttons and shit
-		if(isCollided){
-			const int buttonWidth = 128;
-	    	const int buttonHeight = 60;
-
-			// Draw a button to start the game
-		    if (GUI.Button(
-		      // Center in X, 2/3 of the height in Y
-		      new Rect(Screen.width / 2 - (buttonWidth / 2), (2 * Screen.height / 3) - (buttonHeight / 2), buttonWidth, buttonHeight),
-		      "START"
-		      ))
-		    {
-		      // On Click, load the first level.
-		      Application.LoadLevel("Stage1"); // "Stage1" is the scene name
-		    }
-		}else{
-			//do nothing?
-		}
-	}
 }
