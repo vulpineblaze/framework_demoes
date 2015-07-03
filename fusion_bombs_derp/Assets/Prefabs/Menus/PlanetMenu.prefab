@@ -41,7 +41,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startBarDisplay: 0
   barTime: 5
-  pos: {x: 400, y: 180}
+  pos: {x: 0, y: 100}
   size: {x: 128, y: 20}
   emptyTex: {fileID: 0}
   fullTex: {fileID: 2800000, guid: 58f1b9a259d718a429575694d7e0c6b4, type: 3}
@@ -58,11 +58,11 @@ Prefab:
       objectReference: {fileID: 2800000, guid: 58f1b9a259d718a429575694d7e0c6b4, type: 3}
     - target: {fileID: 0}
       propertyPath: pos.x
-      value: 400
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: pos.y
-      value: 180
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: size.x

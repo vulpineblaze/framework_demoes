@@ -24,12 +24,18 @@ public class CollideMenuScript : MonoBehaviour {
 		PlayerScript player = otherCollider.gameObject.GetComponent<PlayerScript>();
 		if(player)
 		{
-				// Create a new shot
-			menuTransform = Instantiate(menu) as Transform;
 
-			// Assign position
-			menuTransform.position = transform.position;
-			menuTransform.rotation = transform.rotation;
+			if(menuTransform){
+				menuTransform.gameObject.SetActive(true);
+			}else{
+					// Create a new shot
+				menuTransform = Instantiate(menu) as Transform;
+
+				// Assign position
+				menuTransform.position = transform.position;
+				menuTransform.rotation = transform.rotation;
+			}
+
 		}
 	}
 
@@ -40,7 +46,7 @@ public class CollideMenuScript : MonoBehaviour {
 		PlayerScript player = otherCollider.gameObject.GetComponent<PlayerScript>();
 		if(player)
 		{
-			Destroy(menuTransform.gameObject);
+			menuTransform.gameObject.SetActive(false);
 		}
 	}
 
