@@ -13,6 +13,7 @@ public class WeaponScript : MonoBehaviour
   /// Projectile prefab for shooting
   /// </summary>
   public Transform shotPrefab;
+  public Vector2 positionOffset = new Vector2(0,0);
 
   /// <summary>
   /// Cooldown in seconds between two shots
@@ -55,7 +56,9 @@ public class WeaponScript : MonoBehaviour
       var shotTransform = Instantiate(shotPrefab) as Transform;
 
       // Assign position
-      shotTransform.position = transform.position;
+      shotTransform.position = transform.position + new Vector3(positionOffset.x,positionOffset.y, 0f);
+      // shotTransform.position.x += positionOffset.x;
+      // shotTransform.position.y += positionOffset.y;
       shotTransform.rotation = transform.rotation;
 
       // The is enemy property
@@ -71,6 +74,7 @@ public class WeaponScript : MonoBehaviour
       {
         move.direction = this.transform.up; // towards in 2D space is the right of the sprite
       }
+      
     }
   }
 
