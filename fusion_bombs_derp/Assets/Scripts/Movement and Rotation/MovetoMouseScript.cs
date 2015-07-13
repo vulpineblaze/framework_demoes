@@ -30,26 +30,6 @@ public class MovetoMouseScript : MonoBehaviour {
     if(continousRotation){
       if(InstantaneousRotation){continousRotation=false;}
 
-      // var distance = (transform.position.z - Camera.main.transform.position.z) * lookFactor;
-      //  var position = Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
-      //  position = Camera.main.ScreenToWorldPoint(position);
-      //  go.transform.LookAt(position);
-
-      // Vector3 vectorToTarget = new Vector3(inputX, + inputY,0);
-      // float angle = Mathf.Atan2(-vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
-      // Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-      // transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 10f);
-
-      // var distance = (transform.position.z - Camera.main.transform.position.z) * 0.1;
-      // var position = Vector3(Input.mousePosition.x, Input.mousePosition.y, distance);
-      // position = Camera.main.ScreenToWorldPoint(position);
-      // transform.LookAt(position);
-
-      // Vector3 vectorToTarget = new Vector3(inputX, + inputY,0);
-      // float angle = Mathf.Atan2(-vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
-      // Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-      // transform.rotation = Quaternion.Slerp(transform.rotation, q, Time.deltaTime * 10f);
-
       mouse_pos = Input.mousePosition;
       mouse_pos.z = 5.23f; //The distance between the camera and object
       object_pos = Camera.main.WorldToScreenPoint(transform.position);

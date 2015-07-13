@@ -41,12 +41,6 @@ public class PlayerScript : MonoBehaviour
       speed.x * inputX,
       speed.y * inputY);
 
-    // Vector2 angle = new Vector2(inputX, + inputY);
-    // Vector3 moveDirection = new Vector3 (0.0f, 0.0f, Vector2.Angle(angle, new Vector2(0, + 0)) );
-  // Vector3 newDir = Vector3.RotateTowards(_transform.forward, _direction, _speed, 0.0F);
-  // newDir = new Vector3(0,0,newDir.z);  
-  // transform.rotation = Quaternion.LookRotation(newDir);
-  // Vector3 vectorToTarget = targetTransform.position - transform.position;
     if(inputX != 0 || inputY != 0)
     {
       Vector3 vectorToTarget = new Vector3(inputX, + inputY,0);

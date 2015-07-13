@@ -27,11 +27,6 @@ public class MoveWithParentScript : MonoBehaviour {
 
 	}
 
-	// void FixedUpdate()
-	//   {
-	//     // Apply movement to the rigidbody
-	//     GetComponent<Rigidbody2D>().velocity = movement;
-	//   }
 }
 
 

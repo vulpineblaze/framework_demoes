@@ -19,8 +19,7 @@ public class CollideMenuScript : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D otherCollider)
 	{
-		//EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
-		//transform.ongui; //transform.gameObject.AddComponent<GuiMenuScript>();	// Happens when player moves over it
+
 		PlayerScript player = otherCollider.gameObject.GetComponent<PlayerScript>();
 		if(player)
 		{
@@ -41,8 +40,7 @@ public class CollideMenuScript : MonoBehaviour {
 
 	void OnTriggerExit2D(Collider2D otherCollider)
 	{
-		//EnemyScript enemy = collision.gameObject.GetComponent<EnemyScript>();
-		//transform.ongui; //transform.gameObject.AddComponent<GuiMenuScript>();	// Happens when player moves over it
+
 		PlayerScript player = otherCollider.gameObject.GetComponent<PlayerScript>();
 		if(player)
 		{

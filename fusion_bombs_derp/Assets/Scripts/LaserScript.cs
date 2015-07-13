@@ -24,8 +24,6 @@ public class LaserScript : MonoBehaviour
   void Update()
   {
     // Create the laser start from the prefab
-  	// transform.position = transform.parent.position;
-  	//transform.localPosition = Vector3.zero;
 
 
     float startSpriteWidth = 0f;
@@ -49,19 +47,10 @@ public class LaserScript : MonoBehaviour
  
     // Define an "infinite" size, not too big but enough to go off screen
     float currentLaserSize = maxLaserSize;
-    // Vector2 hitDistance = new Vector2(maxLaserSize,maxLaserSize);
-    // Vector2 endPoint = new Vector2(0,0);
  
     // Raycast at the right as our sprite has been design for that
     Vector2 laserDirection = transform.right;
     RaycastHit2D hit = Physics2D.Raycast(transform.position, laserDirection, maxLaserSize);
-
-    // RaycastHit2D hit = Physics2D.BoxCast( //this one almost worked
-    // 									transform.position,
-    // 									boxColliderSize,   //public Vector2 boxColliderSize = new Vector2(2.0f,2.0f);
-    // 									transform.rotation.z,
-    // 									laserDirection, 
-    // 									maxLaserSize);
  
     if (hit.collider != null 
     	&& hit.collider.gameObject != end
@@ -72,7 +61,6 @@ public class LaserScript : MonoBehaviour
  
       // -- Get the laser length
       currentLaserSize = Vector2.Distance(hit.point, transform.position);
-      // endPoint = hit.point;
  
       // -- Create the end sprite
       if (end == null)
@@ -92,10 +80,6 @@ public class LaserScript : MonoBehaviour
  
     // Place things
     // -- Gather some data
-    // float startSpriteWidth = start.GetComponent<Renderer>().bounds.size.x
-    // float startSpriteWidth = start.GetComponent<Renderer>().bounds.size.x * Mathf.Cos(transform.rotation.z);
-    // float startSpriteWidth = start.GetComponent<Renderer>().bounds.size.x * Mathf.Asin(transform.rotation.z) * Mathf.Sign(transform.rotation.z);
-    // float startSpriteWidth = start.GetComponent<Mesh>().bounds.size.x;
     float endSpriteWidth = 0f;
     if (end != null) endSpriteWidth = end.GetComponent<Renderer>().bounds.size.x;
  
@@ -106,12 +90,7 @@ public class LaserScript : MonoBehaviour
     // End?
     if (end != null)
     {
-    	// float angle = transform.rotation.z;
-     //  end.transform.localPosition = new Vector2(currentLaserSize*Mathf.Cos(angle), Mathf.Sin(angle)*currentLaserSize);
-     //  end.transform.localPosition = new Vector2(currentLaserSize*Mathf.Cos(angle), Mathf.Sin(angle)*currentLaserSize);
       end.transform.localPosition = new Vector2(currentLaserSize,0f);
-      // end.transform.localPosition = endPoint;
-
     }
  
   }

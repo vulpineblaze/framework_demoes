@@ -68,8 +68,6 @@ public class WeaponScript : MonoBehaviour
 
       // Assign position
       shotTransform.position = transform.position + new Vector3(positionOffset.x,positionOffset.y, 0f);
-      // shotTransform.position.x += positionOffset.x;
-      // shotTransform.position.y += positionOffset.y;
       shotTransform.rotation = transform.rotation;
 
       // The is enemy property

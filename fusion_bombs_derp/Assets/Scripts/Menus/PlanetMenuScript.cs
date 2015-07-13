@@ -13,7 +13,6 @@ public class PlanetMenuScript : MonoBehaviour {
 	public Texture2D fullTex;
 
 	private bool wasClicked = false;
-	// private bool wasEverMined = false;
 
 	private float barDisplay;
 	private DateTime startTime;
@@ -23,8 +22,7 @@ public class PlanetMenuScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		barDisplay = startBarDisplay;
-		
-		//startTime = Time.time;
+
 	}
 	
 	// Update is called once per frame
@@ -40,9 +38,7 @@ public class PlanetMenuScript : MonoBehaviour {
 				buttonText = "Mine This\nPlanet Again";
 				// wasEverMined = true;
 			}
-			// if(wasEverMined && (buttonText != "Mine This\nPlanet Again")){
-			// 	buttonText = "Mine This\nPlanet Again";
-			// }
+
 		}
 		float inputX = Input.GetAxis("Horizontal");
     	float inputY = Input.GetAxis("Vertical");
@@ -53,9 +49,6 @@ public class PlanetMenuScript : MonoBehaviour {
 				buttonText = "Mine This\nPlanet Again";
 			}
 		}
-		
-		// barDisplay = Time.time*0.05f;
- //        barDisplay = MyControlScript.staticHealth;
 	
 	}
 
@@ -73,8 +66,6 @@ public class PlanetMenuScript : MonoBehaviour {
 	      ))
 	    {
 	      // On Click, load the first level.
-	      // Application.LoadLevel("Stage1"); // "Stage1" is the scene name
-	    	// GUI.Box(new Rect(5,20, 20, 20),"This is the text to be displayed");
 	    	wasClicked = true;
 	    	startTime = System.DateTime.Now;
 	    	buttonText = "Mining!";
