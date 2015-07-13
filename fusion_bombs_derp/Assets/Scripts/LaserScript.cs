@@ -55,6 +55,13 @@ public class LaserScript : MonoBehaviour
     // Raycast at the right as our sprite has been design for that
     Vector2 laserDirection = transform.right;
     RaycastHit2D hit = Physics2D.Raycast(transform.position, laserDirection, maxLaserSize);
+
+    // RaycastHit2D hit = Physics2D.BoxCast( //this one almost worked
+    // 									transform.position,
+    // 									boxColliderSize,   //public Vector2 boxColliderSize = new Vector2(2.0f,2.0f);
+    // 									transform.rotation.z,
+    // 									laserDirection, 
+    // 									maxLaserSize);
  
     if (hit.collider != null 
     	&& hit.collider.gameObject != end

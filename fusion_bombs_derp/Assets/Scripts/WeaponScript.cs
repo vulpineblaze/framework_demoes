@@ -15,6 +15,8 @@ public class WeaponScript : MonoBehaviour
   public Transform shotPrefab;
   public Vector2 positionOffset = new Vector2(0,0);
 
+  public bool stuckToParent = false;
+
   /// <summary>
   /// Cooldown in seconds between two shots
   /// </summary>
@@ -25,6 +27,7 @@ public class WeaponScript : MonoBehaviour
   //--------------------------------
 
   private float shootCooldown;
+  private Transform stuckShot;
 
   void Start()
   {
@@ -36,6 +39,11 @@ public class WeaponScript : MonoBehaviour
     if (shootCooldown > 0)
     {
       shootCooldown -= Time.deltaTime;
+    }
+
+    if(stuckToParent && stuckShot != null){
+      stuckShot.position = transform.position + new Vector3(positionOffset.x,positionOffset.y, 0f);
+      stuckShot.rotation = transform.rotation;
     }
   }
 
@@ -54,6 +62,9 @@ public class WeaponScript : MonoBehaviour
 
       // Create a new shot
       var shotTransform = Instantiate(shotPrefab) as Transform;
+      if(stuckToParent){
+        stuckShot = shotTransform;
+      }
 
       // Assign position
       shotTransform.position = transform.position + new Vector3(positionOffset.x,positionOffset.y, 0f);

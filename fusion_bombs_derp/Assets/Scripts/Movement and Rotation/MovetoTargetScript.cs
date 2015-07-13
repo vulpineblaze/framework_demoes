@@ -6,6 +6,7 @@ public class MovetoTargetScript : MonoBehaviour {
 
   public Transform target;
   public bool InstantaneousRotation = false;
+  public bool disableRotation = false;
   // public Vector2 speed = new Vector2(50, 50);
   public Vector2 speed = new Vector2(1, 1);
   public int maxSpeed = 10;
@@ -32,6 +33,9 @@ public class MovetoTargetScript : MonoBehaviour {
   // Update is called once per frame
   void Update () {
 
+    // if(continousRotation && disableRotation){
+    //   continousRotation = false;
+    // }
 
     if(continousRotation){
       if(InstantaneousRotation){continousRotation=false;}
@@ -81,7 +85,7 @@ public class MovetoTargetScript : MonoBehaviour {
         clean_y);
 
 
-      if(clean_x != 0 || clean_y != 0)
+      if((clean_x != 0 || clean_y != 0) && !disableRotation)
       {
         Vector3 vectorToTarget = new Vector3(clean_x, + clean_y,0);
         float angle = Mathf.Atan2(-vectorToTarget.x, vectorToTarget.y) * Mathf.Rad2Deg;
