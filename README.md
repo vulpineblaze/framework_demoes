@@ -73,6 +73,18 @@ coming soon(TM)
 ##### Merging your branch with master, or some other branch.
 coming soon(TM)
 
+##### Address an Issue, then create a Pull request
+This workflow has the user take a fresh issue, make a branch, complete the issue, and merge the branch back into master.
+
+* `git checkout -b <branchname> `
+  * Use the issue+number as the name (Eg. For issue#53 use "**iss53**")
+  * If you already have the branch, leave out the **-b** flag
+
+Do work as per the typical workflow. Once you have you last commit pushed, do this:
+* Goto github.com and create a pull request.
+  * [github tut](https://help.github.com/articles/creating-a-pull-request/)
+* I have no clue whats next. Never got this far...
+
 
 ____
 ### Development Schedule
