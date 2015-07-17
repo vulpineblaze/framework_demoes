@@ -51,9 +51,17 @@ Heres a few links to warm-up:
 * `git branch`
 
 ##### Making a branch
-* `git checkout -b [name_of_your_new_branch]`
-* `git push origin [name_of_your_new_branch]` 
+* `git checkout -b \<branchname\> `
+* `git push origin \<branchname\> ` 
   * Now github knows about your branch
+
+##### Setting remote for a branch
+* `git remote add <remote_server>`
+  * OPTIONAL: probably gonna wanna keep this origin
+* `git push origin \<branchname\> ` 
+  
+##### Deleting a branch locally
+* `git branch -D \<branchname\> `
 
 ##### Working in your branch, and not master
 coming soon(TM)
