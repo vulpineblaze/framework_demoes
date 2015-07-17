@@ -18,13 +18,15 @@ Some of these command will have a spot with a vairable, like this: <variablename
  
 
 ### Typical dev workflow
+
 Before opening the project in Unity, pull changes from the repo:
-`git pull`
+* `git pull`
+
 Then do some work. Once you are done, close Unity and push the changes into github:
-`git add .`   -   You may have to use the flag "-A"
-`git commit -m "I did this, that, and the other!"`
-`git pull`
-`git push origin <branchname>`
+* `git add .`   -   You may have to use the flag "-A"
+* `git commit -m "I did this, that, and the other!"`
+* `git pull`
+* `git push origin <branchname>`
 
 
 ## Development Schedule
@@ -32,5 +34,6 @@ This section is to help coordinate any sort of timeline building, as well as hel
 #### Weekly
 * We will separately made code changes, when we find time. 
 * We will make our best attempt at meeting every Friday for 2-4+ hours to coordinate our changes and make some progress on exisitng issues & features.
+
 #### Monthly
 * We will both coordinate our scheudles and attempt to declare a "*Coding Weekend!* " 1-2 times monthly to make 'sprint' and make serious headway on the larger|new|outstanding issues & features. 
