@@ -53,7 +53,7 @@ Heres a few links to warm-up:
 ##### Making a branch
 * `git checkout -b [name_of_your_new_branch]`
 * `git push origin [name_of_your_new_branch]` 
- * Now github knows about your branch
+  * Now github knows about your branch
 
 ##### Working in your branch, and not master
 coming soon(TM)
