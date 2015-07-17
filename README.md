@@ -3,6 +3,7 @@
 This repo is for our initial efforts programming the game 'Fusion Bombs Derp' in Unity 2D. The idea behind using this repo is that we may have to prototype other Unity projects in order to investigate different code examples / features before implementing them into our main body of code. 
 
 ____
+____
 # Dev Info
 ## Git
 This section will include various git command combonations, tpo help prevent any **Ooops'** happening to the repo or anyones personal code. 
