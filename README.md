@@ -43,7 +43,7 @@ ____
 * `git reset --hard origin/master`
 
 ____
-##### Issues, Branches, etc..
+#### Issues, Branches, etc..
 Heres a few links to warm-up:
 [Using pull requests](https://help.github.com/articles/using-pull-requests/)
 ##### Making a branch
