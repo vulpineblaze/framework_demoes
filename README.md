@@ -31,6 +31,14 @@ Then do some work. Once you are done, close Unity and push the changes into gith
 * `git push origin <branchname>`
 
 
+### To Wipe All Local Changes
+
+##### This will destroy any work you have done!
+##### Make a copy of your work manually! Run this at your own risk!
+
+* `git fetch origin`
+* `git reset --hard origin/master`
+
 ## Development Schedule
 This section is to help coordinate any sort of timeline building, as well as help us to coordinate our schedules
 #### Weekly
