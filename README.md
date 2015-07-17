@@ -5,7 +5,7 @@ This repo is for our initial efforts programming the game 'Fusion Bombs Derp' in
 
 # Dev Info
 ## Git
-This section will include various git command combonations, tpo help prevent any "Ooops'" happening to the repo or anyone personal code. 
+This section will include various git command combonations, tpo help prevent any **Ooops'** happening to the repo or anyones personal code. 
 Some sweet links:
 
 [git command cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
@@ -39,11 +39,15 @@ Then do some work. Once you are done, close Unity and push the changes into gith
 * `git fetch origin`
 * `git reset --hard origin/master`
 
+
+
 ## Development Schedule
-This section is to help coordinate any sort of timeline building, as well as help us to coordinate our schedules
+This section is to help coordinate any sort of timeline building, as well as help us to coordinate our schedules. Real life supercedes all schedules directives, except where specifically stated & agreed upon.
+
 #### Weekly
-* We will separately made code changes, when we find time. 
-* We will make our best attempt at meeting every Friday for 2-4+ hours to coordinate our changes and make some progress on exisitng issues & features.
+* We will separately made code changes, when we find time. Shoot for at least 1 per week. 
+* We will make our best attempt at meeting every Friday for 2-4+ hours to coordinate our changes and make some progress on existing issues & features.
+** If not, we can *make it up* by doing more solo work the week before.
 
 #### Monthly
 * We will both coordinate our scheudles and attempt to declare a "*Coding Weekend!* " 1-2 times monthly to make 'sprint' and make serious headway on the larger|new|outstanding issues & features. 
