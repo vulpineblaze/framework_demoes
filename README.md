@@ -39,6 +39,17 @@ Then do some work. Once you are done, close Unity and push the changes into gith
 * `git fetch origin`
 * `git reset --hard origin/master`
 
+### Issues, Branches, etc..
+Heres a few links to warm-up:
+[Using pull requests](https://help.github.com/articles/using-pull-requests/)
+#### Making a branch
+coming soon(TM)
+
+#### Working in your branch, and not master
+coming soon(TM)
+
+#### Merging your branch with master, or some other branch.
+coming soon(TM)
 
 
 ## Development Schedule
