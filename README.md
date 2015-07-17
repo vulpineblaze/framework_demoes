@@ -13,7 +13,7 @@ Some sweet links:
 [git markdown guide](https://help.github.com/articles/markdown-basics/)
 ### Git command "variables"
 Some of these command will have a spot with a vairable, like this: <variablename>. These will be described here:
-* <branchname>  The name of the branch you are working on. We are cureent (mis)using "master"
+* \<branchname\>  The name of the branch you are working on. We are cureent (mis)using "master"
 * <variablename>  from the example, not used.
  
 
