@@ -53,7 +53,7 @@ Heres a few links to warm-up:
 ##### Making a branch
 * `git checkout -b [name_of_your_new_branch]`
 * `git push origin [name_of_your_new_branch]` 
-*** Now github knows about your branch
+* * * Now github knows about your branch
 
 ##### Working in your branch, and not master
 coming soon(TM)
@@ -69,7 +69,7 @@ This section is to help coordinate any sort of timeline building, as well as hel
 ##### Weekly
 * We will separately made code changes, when we find time. Shoot for at least 1 per week. 
 * We will make our best attempt at meeting every Friday for 2-4+ hours to coordinate our changes and make some progress on existing issues & features.
-** If not, we can *make it up* by doing more solo work the week before.
+* * If not, we can *make it up* by doing more solo work the week before.
 
 ##### Monthly
 * We will both coordinate our scheudles and attempt to declare a "*Coding Weekend!* " 1-2 times monthly to make 'sprint' and make serious headway on the larger|new|outstanding issues & features. 
