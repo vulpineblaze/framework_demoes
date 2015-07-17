@@ -46,8 +46,13 @@ ____
 #### Issues, Branches, etc..
 Heres a few links to warm-up:
 [Using pull requests](https://help.github.com/articles/using-pull-requests/)
+
+##### View all branches branch
+* `git branch`
+
 ##### Making a branch
-coming soon(TM)
+* `git checkout -b [name_of_your_new_branch]`
+* `git push origin [name_of_your_new_branch]` // Now github knows about your branch
 
 ##### Working in your branch, and not master
 coming soon(TM)
