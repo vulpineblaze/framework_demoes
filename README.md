@@ -6,7 +6,7 @@ ____
 ____
 ## Dev Info
 ### Git
-This section will include various git command combonations, tpo help prevent any **Ooops'** happening to the repo or anyones personal code. 
+This section will include various git command combonations, too help prevent any **Ooops'** happening to the repo or anyones personal code. 
 Some sweet links:
 
 [git command cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
@@ -16,7 +16,7 @@ Some sweet links:
 Some of these command will have a spot with a vairable, like this: \<variablename\>. 
 
 These will be described here:
-* \<branchname\>  The name of the branch you are working on. We are cureent (mis)using "master"
+* \<branchname\>  The name of the branch you are working on. We are currently *mis*using "master"
 * \<variablename\>  from the example, not used.
  
 
