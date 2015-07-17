@@ -46,22 +46,26 @@ ____
 #### Issues, Branches, etc..
 Heres a few links to warm-up:
 [Using pull requests](https://help.github.com/articles/using-pull-requests/)
+[Basic Branching & Merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
 
 ##### View all branches branch
 * `git branch`
 
 ##### Making a branch
-* `git checkout -b \<branchname\> `
-* `git push origin \<branchname\> ` 
+* `git checkout -b <branchname> `
+  *  This is shorthand for these two commands:
+  *  `git branch <branchname>`
+  *  `git checkout <branchname>`
+* `git push origin <branchname> ` 
   * Now github knows about your branch
 
 ##### Setting remote for a branch
 * `git remote add <remote_server>`
   * OPTIONAL: probably gonna wanna keep this origin
-* `git push origin \<branchname\> ` 
+* `git push origin <branchname> ` 
   
 ##### Deleting a branch locally
-* `git branch -D \<branchname\> `
+* `git branch -D <branchname> `
 
 ##### Working in your branch, and not master
 coming soon(TM)
