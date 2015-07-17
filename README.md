@@ -2,7 +2,7 @@
 ## Description
 This repo is for our initial efforts programming the game 'Fusion Bombs Derp' in Unity 2D. The idea behind using this repo is that we may have to prototype other Unity projects in order to investigate different code examples / features before implementing them into our main body of code. 
 
-
+____
 # Dev Info
 ## Git
 This section will include various git command combonations, tpo help prevent any **Ooops'** happening to the repo or anyones personal code. 
@@ -19,6 +19,7 @@ These will be described here:
 * \<variablename\>  from the example, not used.
  
 
+____
 ### Typical dev workflow
 
 Before opening the project in Unity, pull changes from the repo:
@@ -31,6 +32,7 @@ Then do some work. Once you are done, close Unity and push the changes into gith
 * `git push origin <branchname>`
 
 
+____
 ### To Wipe All Local Changes
 
 ##### This will destroy any work you have done!
@@ -39,6 +41,7 @@ Then do some work. Once you are done, close Unity and push the changes into gith
 * `git fetch origin`
 * `git reset --hard origin/master`
 
+____
 ### Issues, Branches, etc..
 Heres a few links to warm-up:
 [Using pull requests](https://help.github.com/articles/using-pull-requests/)
@@ -52,6 +55,7 @@ coming soon(TM)
 coming soon(TM)
 
 
+____
 ## Development Schedule
 This section is to help coordinate any sort of timeline building, as well as help us to coordinate our schedules. Real life supercedes all schedules directives, except where specifically stated & agreed upon.
 
