@@ -77,7 +77,7 @@ coming soon(TM)
 This workflow has the user take a fresh issue, make a branch, complete the issue, and merge the branch back into master.
 
 * `git checkout -b <branchname> `
-  * Use the issue+number as the name (Eg. For issue#53 use "**iss53**")
+  * Use the issue+number as the name, plus some descriptive text (Eg. For issue#53 use "**iss53-fix-the-bug-we-found**")
   * If you already have the branch, leave out the **-b** flag
 
 Do work as per the typical workflow. Once you have you last commit pushed, do this:
