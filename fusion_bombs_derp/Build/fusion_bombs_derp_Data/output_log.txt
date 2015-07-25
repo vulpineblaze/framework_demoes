@@ -1,0 +1,40 @@
+Initialize engine version: 5.1.1f1 (2046fc06d4d8)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.1]
+    Renderer: Intel(R) HD Graphics 3000 (ID=0x116)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.189 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\dev\framework_demoes\fusion_bombs_derp\Build\fusion_bombs_derp_Data\Managed\System.dll (this message is harmless)
+The referenced script on this Behaviour is missing!
+ 
+(Filename:  Line: 1715)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.877167 ms
+
+Unloading 17 unused Assets to reduce memory usage. Loaded Objects now: 385.
+Total: 0.589111 ms (FindLiveObjects: 0.029421 ms CreateObjectMapping: 0.032158 ms MarkObjects: 0.320213 ms  DeleteObjects: 0.206633 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at PlayerScript.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

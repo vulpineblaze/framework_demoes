@@ -13,6 +13,13 @@ public class PlayerScript : MonoBehaviour
   // 2 - Store the movement
   private Vector2 movement;
 
+  void Start()
+  {
+    HealthScript playerHealth = this.GetComponent<HealthScript>();
+    GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
+    playerHealth.hp = globalPlayer.playerHealth;
+  }
+
   void Update()
   {
     // ...
@@ -29,7 +36,6 @@ public class PlayerScript : MonoBehaviour
       {
         // false because the player is not an enemy
         weapon.Attack(false);
-        SoundEffectsHelper.Instance.MakePlayerShotSound();
       }
     }
     // 3 - Retrieve axis information
