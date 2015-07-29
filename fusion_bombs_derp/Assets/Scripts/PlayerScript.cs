@@ -19,10 +19,10 @@ public class PlayerScript : MonoBehaviour
 
     // 5 - Shooting
     bool shoot = Input.GetButtonDown("Fire1");
-    shoot |= Input.GetButtonDown("Fire2");
+    bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-    if (shoot)
+    if (shoot) // Primary Weapon
     {
       WeaponScript weapon = GetComponent<WeaponScript>();
       if (weapon != null)
@@ -32,6 +32,18 @@ public class PlayerScript : MonoBehaviour
         SoundEffectsHelper.Instance.MakePlayerShotSound();
       }
     }
+
+    if (secondaryshoot) // Secondary Weapon
+    {
+      SecondaryWeaponScript weapon = GetComponent<SecondaryWeaponScript>(); // Look at above if statement for changes made
+      if (weapon != null)
+      {
+        // false because the player is not an enemy
+        weapon.Attack(false);
+        SoundEffectsHelper.Instance.MakePlayerShotSound();
+      }
+    }
+
     // 3 - Retrieve axis information
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");
