@@ -13,6 +13,23 @@ public class PlayerScript : MonoBehaviour
   // 2 - Store the movement
   private Vector2 movement;
 
+  private WeaponScript[] weapons;
+
+  private bool doOnce = true;
+
+  void Start()
+  {
+    HealthScript playerHealth = this.GetComponent<HealthScript>();
+    GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
+    playerHealth.hp = globalPlayer.playerHealth;
+
+    // weapons = GetComponentsInChildren<WeaponScript>();
+    // foreach (Transform child in transform) {
+    //   weapons.add(child.GetComponent<WeaponScript>());
+    // }
+
+  }
+
   void Update()
   {
     // ...
@@ -22,16 +39,33 @@ public class PlayerScript : MonoBehaviour
     shoot |= Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-    if (shoot)
-    {
-      WeaponScript weapon = GetComponent<WeaponScript>();
-      if (weapon != null)
+    if(doOnce){
+      weapons = GetComponentsInChildren<WeaponScript>();
+    }
+
+
+    foreach (WeaponScript weapon in weapons) {
+    // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
+      if (shoot)
       {
-        // false because the player is not an enemy
-        weapon.Attack(false);
-        SoundEffectsHelper.Instance.MakePlayerShotSound();
+        // WeaponScript weapon = GetComponent<WeaponScript>();
+        if (weapon != null)
+        {
+          // false because the player is not an enemy
+          weapon.Attack(false);
+        }
       }
     }
+
+    // if (shoot)
+    // {
+    //   WeaponScript weapon = GetComponent<WeaponScript>();
+    //   if (weapon != null)
+    //   {
+    //     // false because the player is not an enemy
+    //     weapon.Attack(false);
+    //   }
+    // }
     // 3 - Retrieve axis information
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");

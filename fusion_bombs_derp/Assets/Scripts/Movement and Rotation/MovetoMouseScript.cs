@@ -7,6 +7,7 @@ public class MovetoMouseScript : MonoBehaviour {
   // public Vector2 speed = new Vector2(50, 50);
   public Vector2 speed = new Vector2(1, 1);
   public int maxSpeed = 10;
+  public float angleOffset = 0.0f;
 
   private Vector2 movement;
 
@@ -35,7 +36,7 @@ public class MovetoMouseScript : MonoBehaviour {
       object_pos = Camera.main.WorldToScreenPoint(transform.position);
       mouse_pos.x = mouse_pos.x - object_pos.x;
       mouse_pos.y = mouse_pos.y - object_pos.y;
-      angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;   // Code that rotates the sprite
+      angle = angleOffset + Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;   // Code that rotates the sprite
       Vector3 z_vector = new Vector3(0.0f, 0.0f, (float)angle);        // Code that rotates the sprite
       transform.rotation = Quaternion.Euler( z_vector );               // Code that rotates the sprite
 

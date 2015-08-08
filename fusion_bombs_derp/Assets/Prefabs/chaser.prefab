@@ -159,8 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shotPrefab: {fileID: 409900, guid: 6543087a7d9de4e468128de89546345b, type: 2}
-  positionOffset: {x: 1, y: 0}
-  stuckToParent: 0
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 1
   shootingRate: .75
 --- !u!212 &21202210
 SpriteRenderer:
