@@ -9,8 +9,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 473096}
   - 212: {fileID: 21290844}
-  - 50: {fileID: 5008604}
   - 60: {fileID: 6012708}
+  - 114: {fileID: 11402516}
   m_Layer: 0
   m_Name: Wedge (4)
   m_TagString: Untagged
@@ -27,8 +27,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 432642}
   - 114: {fileID: 11407704}
-  - 114: {fileID: 11424772}
   - 50: {fileID: 5004654}
+  - 114: {fileID: 11461634}
   m_Layer: 0
   m_Name: Saurothrop
   m_TagString: Untagged
@@ -45,8 +45,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 405422}
   - 212: {fileID: 21297024}
-  - 50: {fileID: 5093038}
   - 60: {fileID: 6098522}
+  - 114: {fileID: 11464630}
   m_Layer: 0
   m_Name: Wedge (1)
   m_TagString: Untagged
@@ -63,8 +63,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 405388}
   - 212: {fileID: 21215668}
-  - 50: {fileID: 5088842}
   - 60: {fileID: 6013824}
+  - 114: {fileID: 11475928}
   m_Layer: 0
   m_Name: Wedge
   m_TagString: Untagged
@@ -81,8 +81,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 404784}
   - 212: {fileID: 21271088}
-  - 50: {fileID: 5018270}
   - 60: {fileID: 6079076}
+  - 114: {fileID: 11496284}
   m_Layer: 0
   m_Name: Wedge (3)
   m_TagString: Untagged
@@ -99,8 +99,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 431212}
   - 212: {fileID: 21266298}
-  - 50: {fileID: 5015500}
   - 60: {fileID: 6054698}
+  - 114: {fileID: 11435756}
   m_Layer: 0
   m_Name: Wedge (2)
   m_TagString: Untagged
@@ -201,86 +201,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!50 &5008604
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110244}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!50 &5015500
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 149718}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!50 &5018270
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148298}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!50 &5088842
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128118}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!50 &5093038
-Rigidbody2D:
-  serializedVersion: 2
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124746}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!60 &6012708
 PolygonCollider2D:
   m_ObjectHideFlags: 1
@@ -366,6 +286,21 @@ PolygonCollider2D:
       - {x: 2.81960106, y: 3.83520222}
       - {x: 4.51510048, y: 1.56470966}
       - {x: .0337715149, y: -.0608558655}
+--- !u!114 &11402516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37356ca7b809499459d886711a4fded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 0
+  shootingRate: .25
 --- !u!114 &11407704
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -377,7 +312,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db8fb194fcf71244685655e4c2261e3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &11424772
+--- !u!114 &11435756
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37356ca7b809499459d886711a4fded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 0
+  shootingRate: .25
+--- !u!114 &11461634
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -392,8 +342,53 @@ MonoBehaviour:
   InstantaneousRotation: 0
   disableRotation: 1
   speed: {x: 1, y: 1}
-  maxSpeed: 10
-  slerpSpeed: 10
+  maxSpeed: 3
+  slerpSpeed: 2
+--- !u!114 &11464630
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37356ca7b809499459d886711a4fded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 0
+  shootingRate: .25
+--- !u!114 &11475928
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37356ca7b809499459d886711a4fded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 0
+  shootingRate: .25
+--- !u!114 &11496284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37356ca7b809499459d886711a4fded7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 0
+  shootingRate: .25
 --- !u!212 &21215668
 SpriteRenderer:
   m_ObjectHideFlags: 1

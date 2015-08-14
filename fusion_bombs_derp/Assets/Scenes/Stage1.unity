@@ -126,22 +126,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 11424772, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1771055813}
-    - target: {fileID: 11424772, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
-      propertyPath: disableRotation
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11424772, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
-      propertyPath: maxSpeed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 11424772, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
-      propertyPath: slerpSpeed
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
   m_IsPrefabParent: 0
