@@ -26,20 +26,27 @@ public class SaurothropScript : MonoBehaviour {
 		newDistance = 0;
 		bestDistance = 99999999999;
 		int i = 0;
+		int testWeapons = 0;
 		foreach (WeaponScript weapon in weapons)
 	    {
-	      // Auto-fire
-
-	    	newDistance = Vector3.Distance(player.transform.position, weapon.transform.position);
-			
-			testArray[i] = newDistance;
-			i++;
-			if(newDistance < bestDistance){
-				bestDistance = newDistance;
-				closest = weapon;
-			}			
+	    	// weapon can get destroyed, so we have to check for it
+	    	if(weapon != null){
+		    	newDistance = Vector3.Distance(player.transform.position, weapon.transform.position);
+				
+				testArray[i] = newDistance;
+				i++;
+				if(newDistance < bestDistance){
+					bestDistance = newDistance;
+					closest = weapon;
+				}	
+			}else{
+				testWeapons++;
+			}		
 	    }
 
+	    if(testWeapons == weapons.Length){
+	    	Destroy(gameObject);
+	    }
 	    //if weapon is closest then fire
     	if (closest != null && closest.CanAttack)
 		{
