@@ -67,6 +67,7 @@ public class PlayerScript : MonoBehaviour
     //   }
     // }
     // 3 - Retrieve axis information
+    
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");
 
