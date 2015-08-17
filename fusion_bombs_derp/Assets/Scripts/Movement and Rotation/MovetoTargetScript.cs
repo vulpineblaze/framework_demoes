@@ -22,7 +22,7 @@ public class MovetoTargetScript : MonoBehaviour {
   // Update is called once per frame
   void Update () {
 
-    if(continousRotation){
+    if(continousRotation && !GetComponent<Rigidbody2D>().IsSleeping()){
       if(InstantaneousRotation){continousRotation=false;}
 
 

@@ -30,6 +30,7 @@ GameObject:
   - 50: {fileID: 5004654}
   - 114: {fileID: 11461634}
   - 114: {fileID: 11438022}
+  - 114: {fileID: 11442312}
   m_Layer: 0
   m_Name: Saurothrop
   m_TagString: Untagged
@@ -284,7 +285,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 113828}
   m_LocalRotation: {x: 0, y: 0, z: .29237175, w: .956304789}
-  m_LocalPosition: {x: -15, y: 6.08638906, z: 0}
+  m_LocalPosition: {x: -24.4799995, y: 6.5, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children:
   - {fileID: 405388}
@@ -344,7 +345,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 2
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!60 &6012708
@@ -499,6 +500,18 @@ MonoBehaviour:
   hp: 5
   isEnemy: 1
   parentDamage: 1
+--- !u!114 &11442312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c792e7477915ce64c8c00220e8c32722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wakeUpDistance: 0
 --- !u!114 &11458976
 MonoBehaviour:
   m_ObjectHideFlags: 1

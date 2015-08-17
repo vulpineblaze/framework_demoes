@@ -15,12 +15,13 @@ public class PlayerScript : MonoBehaviour
 
   private WeaponScript[] weapons;
 
-  private bool doOnce = true;
+  private GlobalPlayerScript globalPlayer;
+
 
   void Start()
   {
     HealthScript playerHealth = this.GetComponent<HealthScript>();
-    GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
+    globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
     playerHealth.hp = globalPlayer.playerHealth;
 
     // weapons = GetComponentsInChildren<WeaponScript>();
@@ -30,18 +31,19 @@ public class PlayerScript : MonoBehaviour
 
   }
 
+  void Awake(){
+    weapons = GetComponentsInChildren<WeaponScript>();
+  }
+
   void Update()
   {
     // ...
-
+    // globalPlayer.playerHealth = playerHealth.hp;
     // 5 - Shooting
     bool shoot = Input.GetButtonDown("Fire1");
     shoot |= Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-    if(doOnce){
-      weapons = GetComponentsInChildren<WeaponScript>();
-    }
 
 
     foreach (WeaponScript weapon in weapons) {
