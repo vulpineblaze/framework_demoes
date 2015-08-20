@@ -19,10 +19,13 @@ public class PlanetMenuScript : MonoBehaviour {
 
 	private string buttonText = "Mine This Planet";
 
+	private GlobalPlayerScript globalPlayer;
+
+
 	// Use this for initialization
 	void Start () {
 		barDisplay = startBarDisplay;
-
+		globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();
 	}
 	
 	// Update is called once per frame
@@ -36,6 +39,8 @@ public class PlanetMenuScript : MonoBehaviour {
 				//Destroy(gameObject);
 				wasClicked = false;
 				buttonText = "Mine This\nPlanet Again";
+				globalPlayer.resources += 10;
+				barDisplay = 0;
 				// wasEverMined = true;
 			}
 
