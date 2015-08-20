@@ -68,7 +68,8 @@ Heres a few links to warm-up:
 * `git branch -D <branchname> `
 
 ##### Working in your branch, and not master
-coming soon(TM)
+To change between branches, simply run the command:
+* 'git checkout <branchname>'
 
 ##### Merging your branch with master, or some other branch.
 coming soon(TM)
@@ -83,7 +84,17 @@ This workflow has the user take a fresh issue, make a branch, complete the issue
 Do work as per the typical workflow. Once you have you last commit pushed, do this:
 * Goto github.com and create a pull request.
   * [github tut](https://help.github.com/articles/creating-a-pull-request/)
-* I have no clue whats next. Never got this far...
+* Assuming the auto-merge feature is working, fill in the details secion and create the merge.
+* At the bottom, there will be a buton to merge: Press it.
+* Once that is complete, github will say that you can delete the branch. Do that too.
+  * Your commits aren't deleted, they are moved to be under 'master', and so your branch contains no useful info now.
+* On the command line, run the following commands
+  * `git pull origin master`
+    * This will inform you your branch is gone.
+    * This step may not be needed. I did it and everything worked in the end.
+  * `git checkout master`
+  * `git pull origin master`
+* At this point you should be in master, and have all your changes from the branch. You're done!
 
 
 ____
