@@ -7,6 +7,10 @@ using System.Collections;
 public class GlobalPlayerScript : MonoBehaviour {
 
 	public int playerHealth = 10;
+	public int resources = 0;
+
+	public int enemiesKilled = 0;
+
 
 	// Use this for initialization
 	void Start () {

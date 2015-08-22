@@ -16,26 +16,40 @@ public class PlayerScript : MonoBehaviour
   private WeaponScript[] weapons;
   private SecondaryWeaponScript[] secondaryweapons;
 
-  private bool doOnce = true;
+  private GlobalPlayerScript globalPlayer;
+
 
   void Start()
   {
     HealthScript playerHealth = this.GetComponent<HealthScript>();
-    GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
+    globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
     playerHealth.hp = globalPlayer.playerHealth;
+  }
+
+  void Awake(){
+    weapons = GetComponentsInChildren<WeaponScript>();
   }
 
   void Update()
   {
+<<<<<<< HEAD
    	// 5 - Shooting
+=======
+    // ...
+    // globalPlayer.playerHealth = playerHealth.hp;
+    // 5 - Shooting
+>>>>>>> 5274cbe7cc1cd9c74511cfeccc50807d04a8a6aa
     bool shoot = Input.GetButtonDown("Fire1");
     bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
+<<<<<<< HEAD
     if(doOnce){
       weapons = GetComponentsInChildren<WeaponScript>();
       secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
     }
+=======
+>>>>>>> 5274cbe7cc1cd9c74511cfeccc50807d04a8a6aa
 
     foreach (WeaponScript weapon in weapons) 
     {
@@ -53,6 +67,7 @@ public class PlayerScript : MonoBehaviour
     }
 
     // 3 - Retrieve axis information
+    
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");
 

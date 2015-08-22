@@ -19,6 +19,14 @@ public class HealthScript : MonoBehaviour
   /// Inflicts damage and check if the object should be destroyed
   /// </summary>
   /// <param name="damageCount"></param>
+
+    private GlobalPlayerScript globalPlayer;
+
+
+  void Start(){
+    globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();
+  }
+
   public void Damage(int damageCount)
   {
     hp -= damageCount;
@@ -29,6 +37,7 @@ public class HealthScript : MonoBehaviour
       Destroy(gameObject);
       SpecialEffectsHelper.Instance.Explosion(transform.position);
       SoundEffectsHelper.Instance.MakeExplosionSound();
+      globalPlayer.enemiesKilled += 1;
     }
   }
 

@@ -106,6 +106,7 @@ MonoBehaviour:
   InstantaneousRotation: 0
   speed: {x: 40, y: 40}
   maxSpeed: 10
+  angleOffset: 0
 --- !u!114 &11435090
 MonoBehaviour:
   m_ObjectHideFlags: 1
