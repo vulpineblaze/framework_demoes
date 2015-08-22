@@ -40,6 +40,7 @@ public class PlayerScript : MonoBehaviour
     bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
+<<<<<<< HEAD
     if(doOnce){
       weapons = GetComponentsInChildren<WeaponScript>();
       secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
@@ -60,6 +61,9 @@ foreach(String element in array){
 }
 */
     foreach (WeaponScript weapon in weapons) 
+=======
+    if (shoot) // Primary Weapon
+>>>>>>> 601bc1a98474a3a1128b12349c5b6686f1f7de09
     {
     // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
       if (shoot)
@@ -69,6 +73,7 @@ foreach(String element in array){
           weapon.Attack(false);
     	}
     }
+<<<<<<< HEAD
     foreach (SecondaryWeaponScript secondweapon in secondaryweapons) 
     {
     // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
@@ -89,6 +94,20 @@ foreach(String element in array){
     //     weapon.Attack(false);
     //   }
     // }
+=======
+
+    if (secondaryshoot) // Secondary Weapon
+    {
+      SecondaryWeaponScript weapon = GetComponent<SecondaryWeaponScript>(); // Look at above if statement for changes made
+      if (weapon != null)
+      {
+        // false because the player is not an enemy
+        weapon.Attack(false);
+        SoundEffectsHelper.Instance.MakePlayerShotSound();
+      }
+    }
+
+>>>>>>> 601bc1a98474a3a1128b12349c5b6686f1f7de09
     // 3 - Retrieve axis information
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");

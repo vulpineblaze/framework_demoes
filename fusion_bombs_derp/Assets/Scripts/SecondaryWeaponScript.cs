@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
+<<<<<<< HEAD
 using System.Collections;
+=======
+>>>>>>> 601bc1a98474a3a1128b12349c5b6686f1f7de09
 
 /// <summary>
 /// Launch projectile
