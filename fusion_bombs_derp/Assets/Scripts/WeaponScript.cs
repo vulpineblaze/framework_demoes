@@ -58,6 +58,7 @@ public class WeaponScript : MonoBehaviour
   {
     if (CanAttack)
     {
+      SoundEffectsHelper.Instance.MakePlayerShotSound();
       shootCooldown = shootingRate;
 
       // Create a new shot

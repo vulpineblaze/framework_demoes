@@ -13,25 +13,45 @@ public class PlayerScript : MonoBehaviour
   // 2 - Store the movement
   private Vector2 movement;
 
+  private WeaponScript[] weapons;
+  private SecondaryWeaponScript[] secondaryweapons;
+
+  private bool doOnce = true;
+
+  void Start()
+  {
+    HealthScript playerHealth = this.GetComponent<HealthScript>();
+    GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
+    playerHealth.hp = globalPlayer.playerHealth;
+  }
+
   void Update()
   {
-    // ...
-
-    // 5 - Shooting
+   	// 5 - Shooting
     bool shoot = Input.GetButtonDown("Fire1");
-    shoot |= Input.GetButtonDown("Fire2");
+    bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-    if (shoot)
-    {
-      WeaponScript weapon = GetComponent<WeaponScript>();
-      if (weapon != null)
-      {
-        // false because the player is not an enemy
-        weapon.Attack(false);
-        SoundEffectsHelper.Instance.MakePlayerShotSound();
-      }
+    if(doOnce){
+      weapons = GetComponentsInChildren<WeaponScript>();
+      secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
     }
+
+    foreach (WeaponScript weapon in weapons) 
+    {
+      if (shoot)
+    	{
+          weapon.Attack(false); // false because the player is not an enemy
+    	}
+    }
+    foreach (SecondaryWeaponScript secondweapon in secondaryweapons) 
+    {
+      if (secondaryshoot)
+    	{
+          secondweapon.Attack(false); // false because the player is not an enemy
+        }
+    }
+
     // 3 - Retrieve axis information
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");
@@ -55,6 +75,7 @@ public class PlayerScript : MonoBehaviour
     // 5 - Move the game object
     GetComponent<Rigidbody2D>().velocity = movement;
   }
+
   void OnCollisionEnter2D(Collision2D collision)
   {
     bool damagePlayer = false;
