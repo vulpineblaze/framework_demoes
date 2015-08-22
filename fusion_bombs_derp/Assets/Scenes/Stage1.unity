@@ -378,7 +378,8 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11415202, guid: d14198f4fe4e85d49b1e795ff268867c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d14198f4fe4e85d49b1e795ff268867c, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &494516592
@@ -1295,6 +1296,25 @@ MonoBehaviour:
   target: {fileID: 1771055813}
   dampTime: 0
   FactorInPercent: 80
+--- !u!1 &1934620951 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 130792, guid: d14198f4fe4e85d49b1e795ff268867c, type: 2}
+  m_PrefabInternal: {fileID: 487691626}
+--- !u!114 &1934620954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1934620951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06654e47aa0fd540b1a3a2f08acce3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  positionOffset: {x: 0, y: 0}
+  stuckToParent: 0
+  shootingRate: .25
 --- !u!1 &1998995339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1318,7 +1338,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1998995339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .25999999, y: 3.30999994, z: 0}
+  m_LocalPosition: {x: .377000004, y: 3.46600008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1134456129}

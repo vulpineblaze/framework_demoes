@@ -14,6 +14,7 @@ public class PlayerScript : MonoBehaviour
   private Vector2 movement;
 
   private WeaponScript[] weapons;
+  private SecondaryWeaponScript[] secondaryweapons;
 
   private bool doOnce = true;
 
@@ -36,25 +37,47 @@ public class PlayerScript : MonoBehaviour
 
     // 5 - Shooting
     bool shoot = Input.GetButtonDown("Fire1");
-    shoot |= Input.GetButtonDown("Fire2");
+    bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
     if(doOnce){
       weapons = GetComponentsInChildren<WeaponScript>();
+      secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
     }
 
+/*
+String array[] = {"","",""}
+for(int i = 0; i<array.size;i++){
+	String element = array[i]; //do stuff
+	print element
+}
 
-    foreach (WeaponScript weapon in weapons) {
+
+~~~~~~~~~
+String array[] = {"","",""}
+foreach(String element in array){
+	print element
+}
+*/
+    foreach (WeaponScript weapon in weapons) 
+    {
     // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
       if (shoot)
-      {
+    	{
         // WeaponScript weapon = GetComponent<WeaponScript>();
-        if (weapon != null)
-        {
           // false because the player is not an enemy
           weapon.Attack(false);
+    	}
+    }
+    foreach (SecondaryWeaponScript secondweapon in secondaryweapons) 
+    {
+    // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
+      if (secondaryshoot)
+    	{
+        // WeaponScript weapon = GetComponent<WeaponScript>():
+          // false because the player is not an enemy
+          secondweapon.Attack(false);
         }
-      }
     }
 
     // if (shoot)
@@ -89,6 +112,7 @@ public class PlayerScript : MonoBehaviour
     // 5 - Move the game object
     GetComponent<Rigidbody2D>().velocity = movement;
   }
+
   void OnCollisionEnter2D(Collision2D collision)
   {
     bool damagePlayer = false;
