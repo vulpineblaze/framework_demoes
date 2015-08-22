@@ -1423,8 +1423,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 456502, guid: 89e9e1be8f4b22e438ecfa627482d018, type: 2}
   m_PrefabInternal: {fileID: 194150746}
-<<<<<<< HEAD
-=======
 --- !u!1 &2147198352 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 141906, guid: d14198f4fe4e85d49b1e795ff268867c, type: 2}
@@ -1457,4 +1455,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 1
   isEnemy: 0
->>>>>>> 601bc1a98474a3a1128b12349c5b6686f1f7de09

@@ -23,91 +23,35 @@ public class PlayerScript : MonoBehaviour
     HealthScript playerHealth = this.GetComponent<HealthScript>();
     GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
     playerHealth.hp = globalPlayer.playerHealth;
-
-    // weapons = GetComponentsInChildren<WeaponScript>();
-    // foreach (Transform child in transform) {
-    //   weapons.add(child.GetComponent<WeaponScript>());
-    // }
-
   }
 
   void Update()
   {
-    // ...
-
-    // 5 - Shooting
+   	// 5 - Shooting
     bool shoot = Input.GetButtonDown("Fire1");
     bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-<<<<<<< HEAD
     if(doOnce){
       weapons = GetComponentsInChildren<WeaponScript>();
       secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
     }
 
-/*
-String array[] = {"","",""}
-for(int i = 0; i<array.size;i++){
-	String element = array[i]; //do stuff
-	print element
-}
-
-
-~~~~~~~~~
-String array[] = {"","",""}
-foreach(String element in array){
-	print element
-}
-*/
     foreach (WeaponScript weapon in weapons) 
-=======
-    if (shoot) // Primary Weapon
->>>>>>> 601bc1a98474a3a1128b12349c5b6686f1f7de09
     {
-    // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
       if (shoot)
     	{
-        // WeaponScript weapon = GetComponent<WeaponScript>();
-          // false because the player is not an enemy
-          weapon.Attack(false);
+          weapon.Attack(false); // false because the player is not an enemy
     	}
     }
-<<<<<<< HEAD
     foreach (SecondaryWeaponScript secondweapon in secondaryweapons) 
     {
-    // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
       if (secondaryshoot)
     	{
-        // WeaponScript weapon = GetComponent<WeaponScript>():
-          // false because the player is not an enemy
-          secondweapon.Attack(false);
+          secondweapon.Attack(false); // false because the player is not an enemy
         }
     }
 
-    // if (shoot)
-    // {
-    //   WeaponScript weapon = GetComponent<WeaponScript>();
-    //   if (weapon != null)
-    //   {
-    //     // false because the player is not an enemy
-    //     weapon.Attack(false);
-    //   }
-    // }
-=======
-
-    if (secondaryshoot) // Secondary Weapon
-    {
-      SecondaryWeaponScript weapon = GetComponent<SecondaryWeaponScript>(); // Look at above if statement for changes made
-      if (weapon != null)
-      {
-        // false because the player is not an enemy
-        weapon.Attack(false);
-        SoundEffectsHelper.Instance.MakePlayerShotSound();
-      }
-    }
-
->>>>>>> 601bc1a98474a3a1128b12349c5b6686f1f7de09
     // 3 - Retrieve axis information
     float inputX = Input.GetAxis("Horizontal");
     float inputY = Input.GetAxis("Vertical");
