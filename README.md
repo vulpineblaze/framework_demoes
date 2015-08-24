@@ -85,7 +85,11 @@ Do work as per the typical workflow. Once you have you last commit pushed, do th
 * Goto github.com and create a pull request.
   * [github tut](https://help.github.com/articles/creating-a-pull-request/)
 * Assuming the auto-merge feature is working, fill in the details secion and create the merge.
-* At the bottom, there will be a buton to merge: Press it.
+  * If not, github give you that helper list of commands. Do those.
+  * Then try to `git pull`
+  * If there are still merge errors, try using the GitGUI
+    * I did this and was able to fix the merge super fast.
+* At the bottom, there will be a button to merge: Press it.
 * Once that is complete, github will say that you can delete the branch. Do that too.
   * Your commits aren't deleted, they are moved to be under 'master', and so your branch contains no useful info now.
 * On the command line, run the following commands
