@@ -87,6 +87,23 @@ NavMeshSettings:
     cellSize: .166666672
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &106241843 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 149718, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
+  m_PrefabInternal: {fileID: 122201865}
+--- !u!114 &106241848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 106241843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &122201865
 Prefab:
   m_ObjectHideFlags: 0
@@ -447,6 +464,23 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 420528, guid: 0b1e9b9307163f1469794b5df7f7dc0f, type: 2}
   m_PrefabInternal: {fileID: 494516592}
+--- !u!1 &552886089 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 110244, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
+  m_PrefabInternal: {fileID: 122201865}
+--- !u!114 &552886094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552886089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &564793080
 Prefab:
   m_ObjectHideFlags: 0
@@ -626,6 +660,23 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 453990, guid: c89194a8dd15ad04fbe3ba362acfaba9, type: 2}
   m_PrefabInternal: {fileID: 943494927}
+--- !u!1 &1027419363 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 128118, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
+  m_PrefabInternal: {fileID: 122201865}
+--- !u!114 &1027419365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027419363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1124091829
 Prefab:
   m_ObjectHideFlags: 0
@@ -1291,6 +1342,23 @@ MonoBehaviour:
   target: {fileID: 1771055813}
   dampTime: 0
   FactorInPercent: 80
+--- !u!1 &1988409397 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 124746, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
+  m_PrefabInternal: {fileID: 122201865}
+--- !u!114 &1988409402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1988409397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1998995339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,6 +1413,23 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9ea8855d33ebb6e47a13adc8bed17b60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &1999636326 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 148298, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
+  m_PrefabInternal: {fileID: 122201865}
+--- !u!114 &1999636331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1999636326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &2033522722 stripped
 Transform:
   m_PrefabParentObject: {fileID: 456502, guid: 89e9e1be8f4b22e438ecfa627482d018, type: 2}
