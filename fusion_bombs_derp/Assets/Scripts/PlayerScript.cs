@@ -14,6 +14,7 @@ public class PlayerScript : MonoBehaviour
   private Vector2 movement;
 
   private WeaponScript[] weapons;
+  private SecondaryWeaponScript[] secondaryweapons;
 
   private GlobalPlayerScript globalPlayer;
 
@@ -23,12 +24,6 @@ public class PlayerScript : MonoBehaviour
     HealthScript playerHealth = this.GetComponent<HealthScript>();
     globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
     playerHealth.hp = globalPlayer.playerHealth;
-
-    // weapons = GetComponentsInChildren<WeaponScript>();
-    // foreach (Transform child in transform) {
-    //   weapons.add(child.GetComponent<WeaponScript>());
-    // }
-
   }
 
   void Awake(){
@@ -37,37 +32,40 @@ public class PlayerScript : MonoBehaviour
 
   void Update()
   {
+<<<<<<< HEAD
+   	// 5 - Shooting
+=======
     // ...
     // globalPlayer.playerHealth = playerHealth.hp;
     // 5 - Shooting
+>>>>>>> 5274cbe7cc1cd9c74511cfeccc50807d04a8a6aa
     bool shoot = Input.GetButtonDown("Fire1");
-    shoot |= Input.GetButtonDown("Fire2");
+    bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
+<<<<<<< HEAD
+    if(doOnce){
+      weapons = GetComponentsInChildren<WeaponScript>();
+      secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
+    }
+=======
+>>>>>>> 5274cbe7cc1cd9c74511cfeccc50807d04a8a6aa
 
-
-    foreach (WeaponScript weapon in weapons) {
-    // WeaponScript weapon = GetComponentInChildren<WeaponScript>();
+    foreach (WeaponScript weapon in weapons) 
+    {
       if (shoot)
-      {
-        // WeaponScript weapon = GetComponent<WeaponScript>();
-        if (weapon != null)
-        {
-          // false because the player is not an enemy
-          weapon.Attack(false);
+    	{
+          weapon.Attack(false); // false because the player is not an enemy
+    	}
+    }
+    foreach (SecondaryWeaponScript secondweapon in secondaryweapons) 
+    {
+      if (secondaryshoot)
+    	{
+          secondweapon.Attack(false); // false because the player is not an enemy
         }
-      }
     }
 
-    // if (shoot)
-    // {
-    //   WeaponScript weapon = GetComponent<WeaponScript>();
-    //   if (weapon != null)
-    //   {
-    //     // false because the player is not an enemy
-    //     weapon.Attack(false);
-    //   }
-    // }
     // 3 - Retrieve axis information
     
     float inputX = Input.GetAxis("Horizontal");
@@ -92,6 +90,7 @@ public class PlayerScript : MonoBehaviour
     // 5 - Move the game object
     GetComponent<Rigidbody2D>().velocity = movement;
   }
+
   void OnCollisionEnter2D(Collision2D collision)
   {
     bool damagePlayer = false;
