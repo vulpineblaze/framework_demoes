@@ -18,6 +18,8 @@ public class PlayerScript : MonoBehaviour
 
   private GlobalPlayerScript globalPlayer;
 
+  private float inputX, inputY;
+
 
   void Start()
   {
@@ -32,24 +34,12 @@ public class PlayerScript : MonoBehaviour
 
   void Update()
   {
-<<<<<<< HEAD
-   	// 5 - Shooting
-=======
-    // ...
-    // globalPlayer.playerHealth = playerHealth.hp;
-    // 5 - Shooting
->>>>>>> 5274cbe7cc1cd9c74511cfeccc50807d04a8a6aa
+
     bool shoot = Input.GetButtonDown("Fire1");
     bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-<<<<<<< HEAD
-    if(doOnce){
-      weapons = GetComponentsInChildren<WeaponScript>();
-      secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
-    }
-=======
->>>>>>> 5274cbe7cc1cd9c74511cfeccc50807d04a8a6aa
+
 
     foreach (WeaponScript weapon in weapons) 
     {
@@ -67,9 +57,10 @@ public class PlayerScript : MonoBehaviour
     }
 
     // 3 - Retrieve axis information
+    Debug.Log(Input.GetAxis("Horizontal"));
     
-    float inputX = Input.GetAxis("Horizontal");
-    float inputY = Input.GetAxis("Vertical");
+    inputX = Input.GetAxis("Horizontal");
+    inputY = Input.GetAxis("Vertical");
 
     // 4 - Movement per direction
     movement = new Vector2(
