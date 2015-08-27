@@ -6,13 +6,13 @@ public class PartialDamageScript : MonoBehaviour {
 	/// <summary>
   /// Total hitpoints
   /// </summary>
-  public int hp = 5;
+  public float hp = 5;
 
   /// <summary>
   /// Enemy or player?
   /// </summary>
   public bool isEnemy = true;
-  public int parentDamage= 1;
+  public float parentDamage= 1;
 
   private WeaponScript weapon;
   private HealthScript parentHealth;
@@ -32,7 +32,7 @@ public class PartialDamageScript : MonoBehaviour {
 		parentHealth = transform.parent.gameObject.GetComponent<HealthScript>();
 	}
 
-	public void Damage(int damageCount)
+	public void Damage(float damageCount)
 	  {
 	    hp -= damageCount;
 

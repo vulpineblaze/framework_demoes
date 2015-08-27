@@ -8,7 +8,7 @@ public class HealthScript : MonoBehaviour
   /// <summary>
   /// Total hitpoints
   /// </summary>
-  public int hp = 1;
+  public float hp = 1;
 
   /// <summary>
   /// Enemy or player?
@@ -27,7 +27,7 @@ public class HealthScript : MonoBehaviour
     globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();
   }
 
-  public void Damage(int damageCount)
+  public void Damage(float damageCount)
   {
     hp -= damageCount;
 

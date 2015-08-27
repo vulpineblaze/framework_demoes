@@ -10,7 +10,7 @@ public class ShotScript : MonoBehaviour
   /// <summary>
   /// Damage inflicted
   /// </summary>
-  public int damage = 1;
+  public float damage = 1;
 
   /// <summary>
   /// Projectile damage player or enemies?
