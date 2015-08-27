@@ -55,7 +55,7 @@ public class GlobalHUDScript : MonoBehaviour {
 
 	    // Set the skin to use
 	    // GUI.skin = skin;
-	    Debug.Log("hud: health " + playerHealth.hp + " | " + globalPlayer.playerHealth + " ; ");
+	    // Debug.Log("hud: health " + playerHealth.hp + " | " + globalPlayer.playerHealth + " ; ");
 
 	    if (Application.loadedLevelName != "Menu" ){
 	    	// Draw a button to start the game

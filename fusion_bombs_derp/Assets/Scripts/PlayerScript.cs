@@ -20,6 +20,8 @@ public class PlayerScript : MonoBehaviour
 
   private float inputX, inputY;
 
+  public bool reload = false;
+
 
   void Start()
   {
@@ -43,7 +45,10 @@ public class PlayerScript : MonoBehaviour
     bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
-
+    if(reload){
+      Start();
+      Awake();
+    }
 
     foreach (WeaponScript weapon in weapons) 
     {
