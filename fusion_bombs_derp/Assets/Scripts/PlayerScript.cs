@@ -26,19 +26,19 @@ public class PlayerScript : MonoBehaviour
     HealthScript playerHealth = this.GetComponent<HealthScript>();
     globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();// FindObjectOfType(typeof(GlobalPlayerScript));
     playerHealth.hp = globalPlayer.playerHealth;
-    Debug.Log("playerscrpit: start");
+    // Debug.Log("playerscrpit: start");
   }
 
   void Awake(){
     weapons = GetComponentsInChildren<WeaponScript>();
     secondaryweapons = GetComponentsInChildren<SecondaryWeaponScript>();
-    Debug.Log("playerscrpit: awake");
+    // Debug.Log("playerscrpit: awake");
   }
 
   void Update()
   {
 
-    Debug.Log("playerscrpit: update");
+    // Debug.Log("playerscrpit: update");
     bool shoot = Input.GetButtonDown("Fire1");
     bool secondaryshoot = Input.GetButtonDown("Fire2");
     // Careful: For Mac users, ctrl + arrow is a bad idea
@@ -61,8 +61,8 @@ public class PlayerScript : MonoBehaviour
     }
 
     // 3 - Retrieve axis information
-    Debug.Log("playerscrpit: test horiz");
-    Debug.Log(Input.GetAxis("Horizontal"));
+    // Debug.Log("playerscrpit: test horiz");
+    // Debug.Log(Input.GetAxis("Horizontal"));
 
     inputX = Input.GetAxis("Horizontal");
     inputY = Input.GetAxis("Vertical");

@@ -126,7 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e213a0890bf07c14e8ab808c8e6de40d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: {x: 60, y: 20}
+  size: {x: 120, y: 20}
+  healthBarSize: {x: 200, y: 28}
   emptyTex: {fileID: 0}
   fullTex: {fileID: 2800000, guid: 58f1b9a259d718a429575694d7e0c6b4, type: 3}
 --- !u!1 &430043282
@@ -460,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 10
-  resources: 0
+  currentResources: 0
   enemiesKilled: 0
 --- !u!4 &1402701325
 Transform:

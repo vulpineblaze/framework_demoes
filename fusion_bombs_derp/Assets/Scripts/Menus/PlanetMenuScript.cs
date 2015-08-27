@@ -39,7 +39,7 @@ public class PlanetMenuScript : MonoBehaviour {
 				//Destroy(gameObject);
 				wasClicked = false;
 				buttonText = "Mine This\nPlanet Again";
-				globalPlayer.resources += 10;
+				globalPlayer.currentResources += 10;
 				barDisplay = 0;
 				// wasEverMined = true;
 			}
