@@ -34,10 +34,12 @@ public class HealthScript : MonoBehaviour
     if (hp <= 0)
     {
       // Dead!
-      Destroy(gameObject);
+
+      globalPlayer.enemiesKilled += 1;
       SpecialEffectsHelper.Instance.Explosion(transform.position);
       SoundEffectsHelper.Instance.MakeExplosionSound();
-      globalPlayer.enemiesKilled += 1;
+      
+      Destroy(gameObject);
     }
   }
 
