@@ -10,14 +10,23 @@ public class GlobalHUDScript : MonoBehaviour {
 	private float barPercent = 0;
 
 
-	private Vector2 pos = new Vector2(20,40);
+	private Vector2 pos = new Vector2(40,40);
+
 	public Vector2 size = new Vector2(128,60);
+
+	public Vector2 texturePos = new Vector2(20,40);
+	public Vector2 textureSize = new Vector2(300,120);
+
 
 	// looks good at 200 x 28 due to image size
 	public Vector2 healthBarSize = new Vector2(200,28);
 
 	public Texture2D emptyTex;
 	public Texture2D fullTex;
+
+	public Texture2D GUIMaybe;
+
+	public GUISkin FBD_GUISkin;
 
 	// Use this for initialization
 	void Start () {
@@ -59,15 +68,44 @@ public class GlobalHUDScript : MonoBehaviour {
 
 	    if (Application.loadedLevelName != "Menu" ){
 	    	// Draw a button to start the game
-		    GUI.Label(
+	    	// GUI.DrawTexture(new Rect(texturePos.x, 
+		    //   	texturePos.y, 
+		    //   	textureSize.x, 
+		    //   	textureSize.y),
+	    	// 	GUIMaybe
+	    	// );
+
+// GUIContent(string text, Texture image, string tooltip);
+		    // GUI.Label(
+		    //   // X, Y, Width, Height
+		    //   new Rect(pos.x * 1 - (size.x / 2), 
+		    //   	pos.y - (size.y / 2), 
+		    //   	size.x, 
+		    //   	size.y),
+		    //   	"Health: " + playerHealth.hp + " | " + globalPlayer.playerHealth + " "
+		    //   );
+
+			// GUI.Label(
+		 //      // X, Y, Width, Height
+		 //      new Rect(pos.x * 1 - (size.x / 2), 
+		 //      	pos.y - (size.y / 2), 
+		 //      	size.x, 
+		 //      	size.y),
+		 //      	new GUIContent(
+		 //      		"Health: " + playerHealth.hp + " | " + globalPlayer.playerHealth + " ", 
+		 //      		GUIMaybe, 
+		 //      		"tooltip?")
+		 //      );
+
+	    	GUI.Label(
 		      // X, Y, Width, Height
 		      new Rect(pos.x * 1 - (size.x / 2), 
 		      	pos.y - (size.y / 2), 
 		      	size.x, 
 		      	size.y),
-		      	"Health: " + playerHealth.hp + " | " + globalPlayer.playerHealth + " "
+		      	"Health: " + playerHealth.hp + " | " + globalPlayer.playerHealth + " ",
+		      	FBD_GUISkin.FindStyle("Label")
 		      );
-
 
 		    GUI.Label(
 		      // X, Y, Width, Height
