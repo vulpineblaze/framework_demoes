@@ -54,7 +54,8 @@ public class LaserScript : MonoBehaviour
  
     if (hit.collider != null 
     	&& hit.collider.gameObject != end
-    	&& hit.collider.gameObject.GetComponent<ShotScript>() == null
+      && hit.collider.gameObject.GetComponent<ShotScript>() == null
+      && hit.collider.gameObject.GetComponent<HealthScript>() != null
     	)
     {
       // We touched something!
