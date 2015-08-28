@@ -46,7 +46,7 @@ public class SaurothropScript : MonoBehaviour {
 		    }
 
 		    if(testWeapons == weapons.Length){
-		    	Destroy(gameObject);
+		    	GetComponent<HealthScript>().Damage(999);
 		    }
 		    //if weapon is closest then fire
 	    	if (closest != null && closest.CanAttack)
