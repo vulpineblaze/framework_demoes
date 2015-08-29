@@ -23,16 +23,17 @@ public class SecondaryWeaponScript : MonoBehaviour
   /// </summary>
   public float shootingRate = 0.25f;
 
-  //--------------------------------
-  // 2 - Cooldown
-  //--------------------------------
+  public float resourceCost = 5;
 
   private float shootCooldown;
   private Transform stuckShot;
 
+  private GlobalPlayerScript globalPlayer;
+
   void Start()
   {
     shootCooldown = 0f;
+    globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();
   }
 
   void Update()
@@ -59,6 +60,9 @@ public class SecondaryWeaponScript : MonoBehaviour
   {
     if (CanAttack)
     {
+      globalPlayer.currentResources -= resourceCost;
+
+      
       shootCooldown = shootingRate;
 
       // Create a new shot
@@ -95,7 +99,7 @@ public class SecondaryWeaponScript : MonoBehaviour
   {
     get
     {
-      return shootCooldown <= 0f;
+      return (shootCooldown <= 0f)&&(globalPlayer.currentResources >= resourceCost);
     }
   }
 }

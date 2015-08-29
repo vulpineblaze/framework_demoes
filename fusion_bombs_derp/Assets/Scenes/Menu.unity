@@ -507,7 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerHealth: 10
-  currentResources: 0
+  currentResources: 20
   enemiesKilled: 0
   turrets:
   - {fileID: 440170, guid: ec5227a7368e8374dac7f8e65b8b2138, type: 2}
