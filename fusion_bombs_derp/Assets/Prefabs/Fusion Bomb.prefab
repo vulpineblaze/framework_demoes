@@ -14,6 +14,7 @@ GameObject:
   - 114: {fileID: 11440034}
   - 58: {fileID: 5861658}
   - 114: {fileID: 11483922}
+  - 114: {fileID: 11483030}
   m_Layer: 0
   m_Name: Fusion Bomb
   m_TagString: Untagged
@@ -81,7 +82,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189078}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 167c56f59196f3545a0c8f1863b4d3c6, type: 3}
   m_Name: 
@@ -90,6 +91,19 @@ MonoBehaviour:
   speed: {x: 1, y: 1}
   maxSpeed: 10
   angleOffset: 90
+--- !u!114 &11483030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4515906d68c98c4cb2a9e7efd0796fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: 10, y: 10}
+  direction: {x: -1, y: 0}
 --- !u!114 &11483922
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -151,6 +165,10 @@ Prefab:
       propertyPath: spawnchild
       value: 
       objectReference: {fileID: 412842, guid: 28ce2a3e91bc0c748abbc688b3298d9a, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 189078}

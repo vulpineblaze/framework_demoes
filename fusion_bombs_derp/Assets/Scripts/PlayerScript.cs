@@ -46,6 +46,7 @@ public class PlayerScript : MonoBehaviour
     // Careful: For Mac users, ctrl + arrow is a bad idea
 
     if(reload){
+      reload = false;
       Start();
       Awake();
     }
