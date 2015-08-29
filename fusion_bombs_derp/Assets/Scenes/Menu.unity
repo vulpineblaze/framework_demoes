@@ -300,6 +300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blue_turret: {fileID: 430422, guid: ed86fbdb6e16cf34fbb09f5885673dd4, type: 2}
+  spawnedBadGuy: {fileID: 432642, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
 --- !u!1 &1076163730
 GameObject:
   m_ObjectHideFlags: 0

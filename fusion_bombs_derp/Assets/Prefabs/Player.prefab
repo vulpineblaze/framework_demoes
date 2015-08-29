@@ -267,10 +267,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06654e47aa0fd540b1a3a2f08acce3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shotPrefab: {fileID: 416770, guid: 78130e5d08495f040b992a31994898d9, type: 2}
+  shotPrefab: {fileID: 463518, guid: b4f443da7ed292148b8127582591a39c, type: 2}
   positionOffset: {x: 0, y: 0}
   stuckToParent: 0
-  shootingRate: .25
+  shootingRate: 1.5
 --- !u!114 &11462792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,6 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: 5, y: 5}
+  reload: 0
 --- !u!114 &11485302
 MonoBehaviour:
   m_ObjectHideFlags: 1
