@@ -79,11 +79,11 @@ public class WeaponScript : MonoBehaviour
       }
 
       // Make the weapon shot always towards it
-      MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
-      if (move != null)
-      {
-        move.direction = this.transform.up; // towards in 2D space is the right of the sprite
-      }
+      // MoveScript move = shotTransform.gameObject.GetComponent<MoveScript>();
+      // if (move != null)
+      // {
+      //   move.direction = this.transform.up; // towards in 2D space is the right of the sprite
+      // }
       
     }
   }
