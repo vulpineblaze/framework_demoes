@@ -28,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0500000007, y: 3.3599999, z: 0}
+  m_LocalPosition: {x: 2.37702155, y: 5.53060102, z: 0}
   m_LocalScale: {x: .530406117, y: .580180228, z: .587524354}
   m_Children: []
   m_Father: {fileID: 0}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa628afcf0616524eb665ec33d9b1080, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 0
   isEnemyShot: 0
 --- !u!114 &11440034
 MonoBehaviour:
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2083f27f416df7a499612ece1062a51a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnchild: {fileID: 412842, guid: 28ce2a3e91bc0c748abbc688b3298d9a, type: 2}
+  spawnchild: {fileID: 495620, guid: 6d24eb8b90482984eb8314a378754ee5, type: 2}
 --- !u!212 &21226098
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -145,7 +145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: damage
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: spawnchild

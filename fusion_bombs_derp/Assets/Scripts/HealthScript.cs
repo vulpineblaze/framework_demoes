@@ -47,6 +47,7 @@ public class HealthScript : MonoBehaviour
   {
     // Is this a shot?
     ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
+    BombScript bomb = otherCollider.gameObject.GetComponent<BombScript>();
     if (shot != null)
     {
       // Avoid friendly fire
@@ -57,6 +58,10 @@ public class HealthScript : MonoBehaviour
         // Destroy the shot
         Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
       }
+    }
+    if (bomb != null)
+    {
+      Damage(bomb.damage);
     }
   }
 }

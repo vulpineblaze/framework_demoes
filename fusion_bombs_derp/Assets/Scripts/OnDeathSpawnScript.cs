@@ -22,7 +22,7 @@ public class OnDeathSpawnScript : MonoBehaviour {
 	    					transform.position, 
 	    					transform.rotation) as Transform;
 	    		// spawned.parent = weapons[i].transform.parent;
-	    		spawned.localScale = transform.localScale;
+	    		// spawned.localScale = transform.localScale;
 
 	}
 }
