@@ -21,6 +21,9 @@ The best way to contribute is to play our game and give us feedback! The best wa
 * Labels, Milestones, Assignment, etc..
   * These are for the devs to help sort and deal with issues effeciently, and we do not except or want help with this. 
   * Please don't mess with them.
+ 
+  
+
 ____
 ____
 ## Dev Info
