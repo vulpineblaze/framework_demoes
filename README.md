@@ -1,7 +1,26 @@
 # framework_demoes
 ##### Description
 This repo is for our initial efforts programming the game 'Fusion Bombs Derp' in Unity 2D. The idea behind using this repo is that we may have to prototype other Unity projects in order to investigate different code examples / features before implementing them into our main body of code. 
-
+____
+## Contributing
+##### Overview
+The best way to contribute is to play our game and give us feedback! The best way to give feedback is to create issues for the bugs you find.
+##### Issues
+* Title
+  *  A short, simple snippet about your problem. 
+  *  Please use proper nouns
+  *  Please avoid saying "broken", "fix", etc..  If it wasn't broken and needing fixing, it wouldn't be an issue. 
+  *  Eg. "Player shoots multiple bullets each mouse click"
+* Description
+  * Provide a description somewhat like the following:
+    * What were you doing when the issue occured?
+    * What is the exact effect of the issue?
+    * What exactly was supposed to happen instead?
+  * This format allows to rapid digestion of your issue, and make its easier to reproduce, debug, and correct.
+  * Eg. "I clicked twice on the second stage, and got 400 bullets instead of 4."
+* Labels, Milestones, Assignment, etc..
+  * These are for the devs to help sort and deal with issues effeciently, and we do not except or want help with this. 
+  * Please don't mess with them.
 ____
 ____
 ## Dev Info
