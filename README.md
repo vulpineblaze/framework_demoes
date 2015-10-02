@@ -6,7 +6,7 @@ ____
 ##### User
  * Go to link "here"   // this section needs pretty-fying
  * Extract all
- * Execute /path/to/binary
+ * Execute /path/to/binary  
 ##### Development
  * Fork repo
  * Make your changes
