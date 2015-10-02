@@ -6,8 +6,10 @@ ____
 ##### User
  * Go to link "here"   // this section needs pretty-fying
  * Extract all
- * Execute /path/to/binary  
+ * Execute /path/to/binary
+
 ##### Development
+
  * Fork repo
  * Make your changes
    *  git clone
@@ -18,6 +20,7 @@ ____
    * detail your change (aka what you did exactly)
    * whatever else for QA purposes
 ____
+
 ## Contributing
 ##### Overview
 The best way to contribute is to play our game and give us feedback! The best way to give feedback is to create issues for the bugs you find.
