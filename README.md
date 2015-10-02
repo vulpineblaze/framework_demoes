@@ -10,15 +10,8 @@ ____
 
 ##### Development
 
- * Fork repo
- * Make your changes
-   *  git clone
-   *  Unity 5.1.1a   //double check revision
-   *  do's and dont's
- * Submit pull request
-   * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
-   * detail your change (aka what you did exactly)
-   * whatever else for QA purposes
+ *  git clone
+ *  Unity 5.1.1a   //double check revision
 
 ____
 
@@ -44,6 +37,16 @@ The best way to contribute is to play our game and give us feedback! The best wa
  
 ##### Development
 
+ * Fork repo
+ * Make your changes
+   *  git clone
+   *  Unity 5.1.1a   //double check revision
+   *  do's and dont's
+ * Submit pull request
+   * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
+   * detail your change (aka what you did exactly)
+   * whatever else for QA purposes
+ 
 ____
 ____
 ## Dev Info
