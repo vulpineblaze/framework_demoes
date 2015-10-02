@@ -2,6 +2,22 @@
 ##### Description
 This repo is for our initial efforts programming the game 'Fusion Bombs Derp' in Unity 2D. The idea behind using this repo is that we may have to prototype other Unity projects in order to investigate different code examples / features before implementing them into our main body of code. 
 ____
+## Installation
+##### User
+ * Go to link "here"   // this section needs pretty-fying
+ * Extract all
+ * Execute /path/to/binary
+##### Development
+ * Fork repo
+ * Make your changes
+   *  git clone
+   *  Unity 5.1.1a   //double check revision
+   *  do's and dont's
+ * Submit pull request
+   * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
+   * detail your change (aka what you did exactly)
+   * whatever else for QA purposes
+____
 ## Contributing
 ##### Overview
 The best way to contribute is to play our game and give us feedback! The best way to give feedback is to create issues for the bugs you find.
@@ -22,7 +38,7 @@ The best way to contribute is to play our game and give us feedback! The best wa
   * These are for the devs to help sort and deal with issues effeciently, and we do not except or want help with this. 
   * Please don't mess with them.
  
-  
+##### Development
 
 ____
 ____
