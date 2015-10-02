@@ -19,6 +19,7 @@ ____
    * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
    * detail your change (aka what you did exactly)
    * whatever else for QA purposes
+
 ____
 
 ## Contributing
