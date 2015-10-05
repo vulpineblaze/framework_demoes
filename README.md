@@ -12,6 +12,7 @@ ____
 
  *  [Git](https://git-scm.com/downloads)
  *  [Unity 5.1.1f1](https://unity3d.com/unity/whats-new/unity-5.1.1)
+   *  Use the personal license, make a free account with your personal email. 
 
 ____
 
