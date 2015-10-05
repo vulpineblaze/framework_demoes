@@ -10,8 +10,8 @@ ____
 
 ##### Development
 
- *  git clone
- *  Unity 5.1.1a   //double check revision
+ *  [Git](https://git-scm.com/downloads)
+ *  [Unity 5.1.1f1](https://unity3d.com/unity/whats-new/unity-5.1.1)
 
 ____
 
@@ -37,15 +37,18 @@ The best way to contribute is to play our game and give us feedback! The best wa
  
 ##### Development
 
- * Fork repo
+ * Fork repo || Create branch
+ * Prepare your work station
+   *  Make sure you have Git and Unity installed, as prescribed above.
+   *  Finish [the tutorial](http://pixelnest.io/tutorials/2d-game-unity/table-of-contents/) (since the code is based on this.)
  * Make your changes
-   *  git clone
-   *  Unity 5.1.1a   //double check revision
-   *  do's and dont's
- * Submit pull request
+   *  `git clone` the repo, and follow the "typical dev workflow" below.  
+ *  do's and dont's
+   *  coming soon(tm), since no one has messed up the repo (yet)...
+ * Submit pull request via github
    * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
-   * detail your change (aka what you did exactly)
-   * whatever else for QA purposes
+   * Detail your change (aka what you did exactly)
+   * Provide additional info to tell others how to test your change (Prove you fixed the issue.)
  
 ____
 ____
@@ -130,7 +133,7 @@ Do work as per the typical workflow. Once you have you last commit pushed, do th
 * Goto github.com and create a pull request.
   * [github tut](https://help.github.com/articles/creating-a-pull-request/)
 * Assuming the auto-merge feature is working, fill in the details secion and create the merge.
-  * If not, github give you that helper list of commands. Do those.
+  * If not, github gives you that helper list of commands. Do those.
   * Then try to `git pull`
   * If there are still merge errors, try using the GitGUI
     * I did this and was able to fix the merge super fast.
@@ -138,7 +141,7 @@ Do work as per the typical workflow. Once you have you last commit pushed, do th
 * Once that is complete, github will say that you can delete the branch. Do that too.
   * Your commits aren't deleted, they are moved to be under 'master', and so your branch contains no useful info now.
 * On the command line, run the following commands
-  * `git pull origin master`
+  * `git pull origin <branchname>`
     * This will inform you your branch is gone.
     * This step may not be needed. I did it and everything worked in the end.
   * `git checkout master`
