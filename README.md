@@ -44,11 +44,14 @@ The best way to contribute is to play our game and give us feedback! The best wa
    *  Finish [the tutorial](http://pixelnest.io/tutorials/2d-game-unity/table-of-contents/) (since the code is based on this.)
  * Make your changes
    *  `git clone` the repo, and follow the "typical dev workflow" below.  
- *  do's and dont's
+ *  Do's and Dont's
    *  Don't push to master. If you type `git push origin master` you are most likely doing something wrong. 
      * use `git push origin <your_branch_name_goes_here>` instead. 
      * If you are having trouble getting your changes back into master, I'll gladly help|fix|do it for you.   
-   *  coming soon(tm), since no one has messed up the repo (yet)...
+   *  Close Unity entirely before doing any git: Eg. `git add` + `git commit -m "message"` + `git push origin <branchname>`
+     *  If Unity is open when you run these commands, they will pick up a ton of trash temp-files, and it will throw a ton of errors at you. The easiest fix is always use git when Unity is closed, and to always close Unity before doing anything in git. 
+     *  Failure to do this will most likely result in your changes being lost. It has happened to us before...
+   *  More to come soon(tm), since no one has messed up the repo (yet)...
  * Submit pull request via github
    * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
    * Detail your change (aka what you did exactly)
