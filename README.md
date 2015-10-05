@@ -45,6 +45,9 @@ The best way to contribute is to play our game and give us feedback! The best wa
  * Make your changes
    *  `git clone` the repo, and follow the "typical dev workflow" below.  
  *  do's and dont's
+   *  Don't push to master. If you type `git push origin master` you are most likely doing something wrong. 
+     * use `git push origin <your_branch_name_goes_here>` instead. 
+     * If you are having trouble getting your changes back into master, I'll gladly help|fix|do it for you.   
    *  coming soon(tm), since no one has messed up the repo (yet)...
  * Submit pull request via github
    * Provide what issue you fixed ( pound sign, then the issue number, eg #42 )
