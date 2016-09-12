@@ -4,7 +4,7 @@ This repo is for our initial efforts programming the game 'Fusion Bombs Derp' in
 ____
 ## Installation
 ##### User
- * Go to link "here"   // this section needs pretty-fying
+ * Go to link [here](https://github.com/vulpineblaze/framework_demoes/blob/master/fusion_bombs_derp/Build/fusion_bombs_derp.zip)   
  * Extract all
  * Execute /path/to/binary
 
@@ -33,14 +33,14 @@ The best way to contribute is to play our game and give us feedback! The best wa
   * This format allows to rapid digestion of your issue, and make its easier to reproduce, debug, and correct.
   * Eg. "I clicked twice on the second stage, and got 400 bullets instead of 4."
 * Labels, Milestones, Assignment, etc..
-  * These are for the devs to help sort and deal with issues effeciently, and we do not except or want help with this. 
+  * These are for the devs to help sort and deal with issues effeciently, and we do not expect or want help with this. 
   * Please don't mess with them.
  
 ##### Development
 
  * Fork repo || Create branch
  * Prepare your work station
-   *  Make sure you have Git and Unity installed, as prescribed above.
+   *  Make sure you have Git and Unity installed, as described above.
    *  Finish [the tutorial](http://pixelnest.io/tutorials/2d-game-unity/table-of-contents/) (since the code is based on this.)
  * Make your changes
    *  `git clone` the repo, and follow the "typical dev workflow" below.  
