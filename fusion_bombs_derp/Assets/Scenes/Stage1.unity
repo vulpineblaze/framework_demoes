@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3bdea6ce4ce5144282b3a4bf3740be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: {fileID: 490530, guid: 5c0629d8392a3f3409ce5c075fd5c783, type: 2}
+  menu: {fileID: 463286, guid: 7a737fc86d28919448c33fbfde3ff0f5, type: 2}
 --- !u!4 &253183160 stripped
 Transform:
   m_PrefabParentObject: {fileID: 432642, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
