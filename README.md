@@ -61,7 +61,7 @@ ____
 ____
 ## Dev Info
 ### Git
-This section will include various git command combonations, too help prevent any **Ooops'** happening to the repo or anyones personal code. 
+This section will include various git command combonations, to help prevent any **Ooops'** happening to the repo or anyones personal code. 
 Some sweet links:
 
 [git command cheat sheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
