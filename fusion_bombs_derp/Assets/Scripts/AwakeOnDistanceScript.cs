@@ -15,11 +15,13 @@ public class AwakeOnDistanceScript : MonoBehaviour {
  
 // Update is called once per frame
     void Update () {
-    	currentDistance = Vector2.Distance (transform.position, player.transform.position);
-        if (currentDistance < wakeUpDistance) {
-            GetComponent<Rigidbody2D>().WakeUp();
-        }else{
-        	GetComponent<Rigidbody2D>().Sleep();
+        if(player){
+            currentDistance = Vector2.Distance (transform.position, player.transform.position);
+            if (currentDistance < wakeUpDistance) {
+                GetComponent<Rigidbody2D>().WakeUp();
+            }else{
+                GetComponent<Rigidbody2D>().Sleep();
+            }
         }
     }
 

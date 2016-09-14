@@ -23,6 +23,10 @@ public class GameOverScript : MonoBehaviour
       )
     )
     {
+      // reset kill counter
+        GlobalPlayerScript globalPlayer = GameObject.Find("GlobalPlayerObject").GetComponent<GlobalPlayerScript>();
+        globalPlayer.enemiesKilled = 0;
+
       // Reload the level
       Application.LoadLevel("Stage1");
     }
