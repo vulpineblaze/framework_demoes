@@ -31,6 +31,7 @@ GameObject:
   - 114: {fileID: 11461634}
   - 114: {fileID: 11438022}
   - 114: {fileID: 11442312}
+  - 114: {fileID: 11411342}
   m_Layer: 0
   m_Name: Saurothrop
   m_TagString: Untagged
@@ -456,6 +457,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db8fb194fcf71244685655e4c2261e3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11411342
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 603baa64b8cf01b4198b788a9d7ce95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &11421746
