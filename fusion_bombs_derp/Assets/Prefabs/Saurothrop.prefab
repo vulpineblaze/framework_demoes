@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21290844}
   - 60: {fileID: 6012708}
   - 114: {fileID: 11486998}
+  - 114: {fileID: 11479316}
   m_Layer: 0
   m_Name: Wedge (4)
   m_TagString: Untagged
@@ -50,6 +51,7 @@ GameObject:
   - 212: {fileID: 21297024}
   - 60: {fileID: 6098522}
   - 114: {fileID: 11404676}
+  - 114: {fileID: 11480662}
   m_Layer: 0
   m_Name: Wedge (1)
   m_TagString: Untagged
@@ -68,6 +70,7 @@ GameObject:
   - 212: {fileID: 21215668}
   - 60: {fileID: 6013824}
   - 114: {fileID: 11460968}
+  - 114: {fileID: 11457192}
   m_Layer: 0
   m_Name: Wedge
   m_TagString: Untagged
@@ -102,6 +105,7 @@ GameObject:
   - 212: {fileID: 21271088}
   - 60: {fileID: 6079076}
   - 114: {fileID: 11458976}
+  - 114: {fileID: 11424088}
   m_Layer: 0
   m_Name: Wedge (3)
   m_TagString: Untagged
@@ -120,6 +124,7 @@ GameObject:
   - 212: {fileID: 21266298}
   - 60: {fileID: 6054698}
   - 114: {fileID: 11439128}
+  - 114: {fileID: 11434504}
   m_Layer: 0
   m_Name: Wedge (2)
   m_TagString: Untagged
@@ -470,6 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 603baa64b8cf01b4198b788a9d7ce95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 425670, guid: d11ebbf9c5223174fb1b4a5ace6c4aab, type: 2}
 --- !u!114 &11421746
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -485,6 +491,32 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0}
   stuckToParent: 1
   shootingRate: 1
+--- !u!114 &11424088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &11434504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &11438022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -523,7 +555,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c792e7477915ce64c8c00220e8c32722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wakeUpDistance: 0
+  wakeUpDistance: 5
+--- !u!114 &11457192
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &11458976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -599,6 +644,32 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0}
   stuckToParent: 1
   shootingRate: 1
+--- !u!114 &11479316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!114 &11480662
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 124746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eeabb1322d8b14cab67a0fd7ca48dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedSprite: {fileID: 21300000, guid: a7aaafb1e3afa5045918462e12e86f97, type: 3}
+  color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &11485296
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -3,6 +3,9 @@ using System.Collections;
 
 public class SelfIndicatorScript : MonoBehaviour {
 
+	public Transform arrowPrefab;
+
+
 	// Use this for initialization
 	void Start () {
 	
