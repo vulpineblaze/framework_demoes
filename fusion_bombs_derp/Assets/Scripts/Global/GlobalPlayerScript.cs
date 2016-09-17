@@ -10,6 +10,7 @@ public class GlobalPlayerScript : MonoBehaviour {
 	public float currentResources = 0;
 
 	public float enemiesKilled = 0;
+    public long lastSession;
 
 	public Transform[] turrets;
 
