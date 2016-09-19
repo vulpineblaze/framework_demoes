@@ -13,4 +13,9 @@ public class SerializablePrefabs : ScriptableObject {
     {
         return prefabs.ToList().Where(o => o.name == name).FirstOrDefault();
     }
+
+    public void InsertPrefab(GameObject p)
+    {
+        prefabs.Add(p);
+    }
 }

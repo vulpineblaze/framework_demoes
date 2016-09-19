@@ -30,4 +30,22 @@ public static class ScriptableObjectUtility
         EditorUtility.FocusProjectWindow();
         Selection.activeObject = asset;
     }
+
+    public static T CreateAsset<T>(string path) where T : ScriptableObject
+    {
+        T asset = ScriptableObject.CreateInstance<T>();
+
+        if (path == "")
+        {
+            path = "Assets";
+        }
+
+        AssetDatabase.CreateAsset(asset, path);
+
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        EditorUtility.FocusProjectWindow();
+        Selection.activeObject = asset;
+        return asset;
+    }
 }

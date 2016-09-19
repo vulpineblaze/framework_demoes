@@ -11,6 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 0}
   m_Name: Prefabs
   m_EditorClassIdentifier: Assembly-CSharp::SerializablePrefabs
-  prefabs:
-  - {fileID: 113828, guid: b9956d24da93c3f4f95c1d6aa6c8fd55, type: 2}
-  - {fileID: 148138, guid: b5fa5abb28aa23146b00005e5c596aae, type: 2}
+  prefabs: []
